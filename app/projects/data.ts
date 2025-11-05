@@ -6,6 +6,10 @@ export interface Project {
   category: string;
   image: string;
   timeframe: string;
+  interactive: boolean; // true for projects with interactive demos within the website
+  demoUrl?: string; // internal path for interactive demos (e.g., '/projects/1/demo')
+  externalLink?: string; // external URL (GitHub, external website, etc.) - doesn't mark as interactive
+  githubUrl?: string; // GitHub repository URL
 }
 
 export const projects: Project[] = [
@@ -17,6 +21,8 @@ export const projects: Project[] = [
     category: 'Algorithms & Optimization',
     image: '/images/projects/project1/wordle_image.jpg',
     timeframe: 'December 2024 - January 2025',
+    interactive: true,
+    demoUrl: '/projects/1/demo', // internal interactive demo
   },
   {
     id: 2,
@@ -26,15 +32,18 @@ export const projects: Project[] = [
     category: 'Machine Learning',
     image: '/images/projects/project2/mnist_digits.png',
     timeframe: 'December 2024 - January 2025',
+    interactive: true,
+    demoUrl: '/projects/2/demo', // internal interactive demo
   },
   {
     id: 3,
     title: 'Flight arrival and departure details analysis (University of London Programming Coursework)',
     description: 'A tool that analyzes flight arrival and departure details using a dataset of flight data.',
-    technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'R'],
+    technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib'],
     category: 'Data Visualization',
     image: '/images/projects/project3/coursework_image.jpg',
     timeframe: 'December 2024 - January 2025',
+    interactive: false,
   },
   {
     id: 4,
@@ -44,6 +53,8 @@ export const projects: Project[] = [
     category: 'LLMs & Prompt Engineering',
     image: '/images/projects/project4/nocap_logo.png',
     timeframe: 'September 2024 - June 2025',
+    interactive: false,
+    externalLink: 'https://projectnocap.org', // external link, not interactive
   },
 ];
 
