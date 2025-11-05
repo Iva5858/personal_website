@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { projects } from './data';
 
 
@@ -30,8 +31,14 @@ export default function Projects() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Project Image */}
-                <div className="relative h-48 bg-gradient-to-br from-gray-400 to-gray-600 dark:from-gray-700 dark:to-gray-900 flex items-center justify-center">
-                  <span className="text-white font-semibold text-lg">{project.title}</span>
+                <div className="relative h-48">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
                   <div className="absolute top-2 right-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
                     <span className="text-white text-sm font-semibold">{project.category}</span>
                   </div>

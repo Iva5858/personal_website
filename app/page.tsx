@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import isaacIcon from '../public/images/isaac_icon.png';
 
 export default function Home() {
   return (
@@ -18,7 +20,7 @@ export default function Home() {
               <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-600 shadow-2xl animate-float">
                 {/* Placeholder for profile image */}
                 <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 dark:from-gray-700 dark:to-gray-900 flex items-center justify-center">
-                  <span className="text-6xl font-bold text-white">IV</span>
+                  <span className="text-6xl font-bold text-white">IVA</span>
                 </div>
               </div>
             </div>
@@ -77,10 +79,12 @@ export default function Home() {
               </Link>
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-              {/* Placeholder for about image */}
-              <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 dark:from-gray-700 dark:to-gray-900 flex items-center justify-center">
-                <span className="text-4xl text-white font-semibold">About Image</span>
-              </div>
+              <Image
+                src={isaacIcon}
+                alt="About image"
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
