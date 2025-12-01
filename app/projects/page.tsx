@@ -31,12 +31,12 @@ export default function Projects() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Project Image */}
-                <div className="relative h-48">
+                <div className={`relative h-48 ${project.id === 4 || project.id === 5 ? 'bg-gray-100 dark:bg-gray-700' : ''}`}>
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover"
+                    className={project.id === 4 || project.id === 5 ? "object-contain p-2" : "object-cover"}
                     sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div className="absolute top-2 right-2 flex flex-col gap-2 items-end">
@@ -86,7 +86,7 @@ export default function Projects() {
                       >
                         View Details
                       </Link>
-                      {project.githubUrl && (
+                      {project.githubUrl && !project.externalLink && (
                         <a
                           href={project.githubUrl}
                           target="_blank"

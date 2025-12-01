@@ -20,16 +20,6 @@ export default function About() {
       <section className="py-20 bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
-            {/* Profile Image */}
-            <div className="relative animate-fadeIn">
-              <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-2xl">
-                {/* Placeholder for profile image */}
-                <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 dark:from-gray-700 dark:to-gray-900 flex items-center justify-center">
-                  <span className="text-5xl text-white font-semibold">Profile Image</span>
-                </div>
-              </div>
-            </div>
-
             {/* Bio */}
             <div className="animate-fadeIn" style={{ animationDelay: '0.2s' }}>
               <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
@@ -37,20 +27,46 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
                 <p>
-                  I am Isaac Vélez Aguirre, a Colombian-Spanish third-year student studying Data Science & Business Analytics 
-                  at the University of London and Business & Leadership at Forward College. I am passionate and curious, 
+                  I am Isaac Vélez Aguirre, a Colombian-Spanish third-year student studying Data Science & Business Analytics
+                  at the University of London and Business & Leadership at Forward College. I am passionate and curious,
                   constantly seeking opportunities for personal growth and learning.
                 </p>
                 <p>
-                  Currently, I am exploring opportunities in the form of internships for the Summer of 2026 to expand my skills 
-                  and become a more qualified professional. I have experience in the tech field as a Software Engineer, having 
-                  worked with Bonnett Analytics and Auteco. I also interned at Opplane, where I gained hands-on experience 
+                Currently, I am applying to master’s programs for the Fall of 2026 to expand my skills and become a more qualified professional. I have experience in the tech field as a Software Engineer, having
+                  worked with Bonnett Analytics and Auteco. I also interned at Opplane, where I gained hands-on experience
                   with Large Language Models (LLMs) and prompt engineering.
                 </p>
                 <p>
-                  I am always open to new opportunities that allow me to learn and grow. My journey in tech has been driven by 
+                  I am always open to new opportunities that allow me to learn and grow. My journey in tech has been driven by
                   curiosity and a desire to make meaningful contributions through data-driven solutions.
                 </p>
+              </div>
+            </div>
+
+            {/* Key University Modules */}
+            <div className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+              <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+                  Data Science and Business Analytics University Modules
+                </h2>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                  This degree and its modules are designed and evaluated by the London School of Economics and Political Science (LSE).
+                </p>
+                <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 dark:text-gray-300">
+                  <li>Machine Learning</li>
+                  <li>Business Analytics, Applied Modelling and Prediction</li>
+                  <li>Statistical Methods for Market Research</li>
+                  <li>Strategy</li>
+                  <li>Advanced Statistics: Distribution Theory</li>
+                  <li>Advanced Statistics: Statistical Inference</li>
+                  <li>Programming for Data Science</li>
+                  <li>Elements of Econometrics</li>
+                  <li>Core Management Concepts</li>
+                  <li>Mathematical Methods</li>
+                  <li>Introduction to Mathematical Statistics</li>
+                  <li>Introduction to Economics</li>
+                  <li>Business and management in a global context</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -167,34 +183,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Certifications */}
-          <div className="animate-fadeIn" style={{ animationDelay: '0.8s' }}>
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">
-              Certifications & Awards
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6 rounded-lg text-center hover:shadow-lg transform hover:scale-105 transition-all duration-200">
-                <div className="text-4xl mb-4">🏆</div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">Data4Good Festival</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Best Data Storyteller Award</p>
-              </div>
-              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6 rounded-lg text-center hover:shadow-lg transform hover:scale-105 transition-all duration-200">
-                <div className="text-4xl mb-4">📜</div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">EMFSS</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Employability Skills</p>
-              </div>
-              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6 rounded-lg text-center hover:shadow-lg transform hover:scale-105 transition-all duration-200">
-                <div className="text-4xl mb-4">🤖</div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">ChatGPT</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Prompt Engineering for Developers Course</p>
-              </div>
-              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6 rounded-lg text-center hover:shadow-lg transform hover:scale-105 transition-all duration-200">
-                <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">EIA Porto 2024</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">International Startup & Innovation Bootcamp</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

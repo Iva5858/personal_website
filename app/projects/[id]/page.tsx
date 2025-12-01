@@ -89,15 +89,21 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
                 </p>
               </div>
 
-              {/* Detailed Description Section - Ready for future content */}
+              {/* Detailed Description Section */}
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
                   Project Details
                 </h2>
                 <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-800">
-                  <p className="text-gray-600 dark:text-gray-400 italic">
-                    More detailed information about this project will be added here in the future.
-                  </p>
+                  {project.details ? (
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
+                      {project.details}
+                    </p>
+                  ) : (
+                    <p className="text-gray-600 dark:text-gray-400 italic">
+                      More detailed information about this project will be added here in the future.
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
@@ -153,7 +159,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
                     Visit Link
                   </a>
                 )}
-                {project.githubUrl ? (
+                {project.githubUrl && !project.externalLink ? (
                   <a
                     href={project.githubUrl}
                     target="_blank"
@@ -165,11 +171,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
                     </svg>
                     View on GitHub
                   </a>
-                ) : (
-                  <button className="w-full px-4 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transform hover:scale-105 transition-all duration-200" disabled>
-                    View on GitHub
-                  </button>
-                )}
+                ) : null}
                 <Link
                   href="/projects"
                   className="block w-full px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-200 text-center"
