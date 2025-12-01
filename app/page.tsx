@@ -68,8 +68,7 @@ export default function Home() {
                 constantly seeking opportunities for personal growth and learning.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                Currently, I am exploring opportunities in the form of internships for the Summer of 2026 to expand my skills 
-                and become a more qualified professional. I have experience in the tech field as a Software Engineer and Data Scientist, 
+              Currently, I am applying to master’s programs for the Fall of 2026 to expand my skills and become a more qualified professional. I have experience in the tech field as a Software Engineer and Data Scientist, 
                 working with AI/ML technologies and Large Language Models.
               </p>
               <Link

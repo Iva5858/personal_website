@@ -1,0 +1,72 @@
+MIT License
+
+Copyright (c) 2025 Isaac Vélez Aguirre
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+ADDITIONAL TERMS FOR PERSONAL CONTENT
+
+The MIT License above applies to the codebase structure, components, and 
+technical implementation, which you are free to use as a template for your 
+own portfolio website.
+
+However, the following personal content remains the exclusive property of 
+Isaac Vélez Aguirre and is protected by copyright:
+
+1. Personal Information & Biography
+   - All biographical text, personal descriptions, and educational/professional 
+     history in `app/about/page.tsx`, `app/page.tsx`, and related files
+   - Personal images, including but not limited to profile pictures and 
+     images in the `public/images/` directory
+
+2. Project Descriptions & Content
+   - All project descriptions, details, and documentation in 
+     `app/projects/data.ts` and project detail pages
+   - Project images and assets in `public/images/projects/`
+   - Any claims about project authorship, implementation details, or results
+
+3. Contact Information
+   - Email addresses, location information, and social media links
+
+RESTRICTIONS:
+
+You may NOT:
+- Use my personal information, biography, or project descriptions to 
+  impersonate me or claim my work as your own
+- Reproduce my project descriptions, images, or biographical content 
+  without explicit written permission
+- Use this website's content in a way that suggests I endorse, sponsor, 
+  or am affiliated with your use of the template
+- Remove or alter copyright notices or attribution
+
+You MAY:
+- Use the code structure, components, and technical implementation as a 
+  template for your own portfolio
+- Modify the code to suit your needs
+- Create derivative works based on the code structure
+- Include attribution to this repository when appropriate
+
+If you use this codebase as a template, you must replace all personal 
+content with your own original content. Any unauthorized use of personal 
+content may result in legal action.
+
+For questions about using personal content or licensing, please contact 
+isaacvelezaguirre@gmail.com.

@@ -366,7 +366,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/Iva5858"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-gray-800 dark:bg-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-900 dark:hover:bg-gray-600 transform hover:scale-110 transition-all duration-200"

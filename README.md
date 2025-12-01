@@ -1,54 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Isaac Vélez Aguirre – Personal Website & Portfolio
 
-## Getting Started
+This is the source code for my personal website and portfolio, built with **Next.js (App Router)** and **TypeScript**.  
+It showcases my background in **Data Science & Business Analytics**, my education and experience, and a curated set of projects in **machine learning**, **statistics**, and **LLMs**.
 
-First, run the development server:
+### Main Sections
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Home (`/`)**: Hero section with quick access to projects and contact.
+- **About (`/about`)**: Detailed bio, education, and professional experience.
+- **Projects (`/projects`)**: Overview of featured work, with individual project pages:
+  - Wordle optimizer using information theory and optimization.
+  - Neural network from scratch for handwritten digit recognition (MNIST).
+  - Statistical computing coursework (MCMC & flight data analysis).
+  - Ongoing ML coursework on diabetes-related health outcomes.
+  - Project NoCap – AI-powered fact-checking assistant for Instagram.
+- **Contact (`/contact`)**: Contact form (backed by Web3Forms) plus email, location, and social links.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (custom light/dark themed UI)
+- **Images**: `next/image`
+- **Forms**: Web3Forms API for contact form submissions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Getting Started (Local Development)
 
-## Contact Form Setup (Web3Forms)
+1. **Install dependencies**
 
-The contact form uses [Web3Forms](https://web3forms.com/) for form submissions. To set it up:
-
-1. Visit [https://web3forms.com/](https://web3forms.com/) and create a free account
-2. Enter your email address to receive a unique access key
-3. Copy `.env.local.example` to `.env.local`:
    ```bash
-   cp .env.local.example .env.local
+   npm install
    ```
-4. Add your Web3Forms access key to `.env.local`:
+
+2. **Set up environment variables**
+
+   The contact form uses [Web3Forms](https://web3forms.com/) for submissions:
+
+   - Visit `https://web3forms.com/` and create a free account.
+   - Get your **access key**.
+   - Create a `.env.local` file in the project root with:
+
+     ```bash
+     NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_actual_access_key_here
+     ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
    ```
-   NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_actual_access_key_here
-   ```
-5. Restart your development server for the changes to take effect
 
-The form will automatically send submissions to your email address configured in Web3Forms.
+   Then open `http://localhost:3000` in your browser.
 
-## Learn More
+### Project Structure (High Level)
 
-To learn more about Next.js, take a look at the following resources:
+- `app/page.tsx` – Home page (hero, about preview, featured projects).
+- `app/about/page.tsx` – About page (bio, modules, education, experience).
+- `app/projects/data.ts` – Project metadata used across the projects section.
+- `app/projects/page.tsx` – Projects listing page.
+- `app/projects/[id]/page.tsx` – Dynamic project detail pages.
+- `app/contact/page.tsx` – Contact page and Web3Forms integration.
+- `app/components/*` – Shared layout/navigation/footer components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This app is optimized for deployment on **Vercel**:
 
-## Deploy on Vercel
+- Build command: `npm run build`
+- Output: Next.js app (App Router)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can deploy by connecting this repository to Vercel and using the default Next.js settings.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### License
+
+This repository uses a **dual licensing approach**:
+
+- **Code/Template**: Licensed under the **MIT License** — you are free to use the codebase structure, components, and technical implementation as a template for your own portfolio website.
+
+- **Personal Content**: All personal content (biography, project descriptions, images, contact information) is **copyrighted** and **protected**. You may NOT:
+  - Use my personal information or project descriptions to impersonate me
+  - Claim my projects or work as your own
+  - Reproduce my biographical content or project descriptions without permission
+
+**In short**: Feel free to use this as a template, but replace all personal content with your own original content. See `LICENSE` for full terms.
+
+

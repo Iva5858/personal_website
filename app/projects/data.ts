@@ -16,7 +16,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Grandma vs. the Future Data Scientist: Information-Theoretic Wordle Solver',
+    title: 'Grandma vs. Data Scientist Student: Information-Theoretic Wordle Solver',
     description: 'This project is an intelligent Wordle solver that uses information theory and optimization algorithms to play the New York Times Wordle game with high accuracy and efficiency. It models each guess as an information-gathering step, selecting words that maximize expected information gain and minimize the number of guesses needed to find the correct answer. I originally built it to compete playfully with my grandmother, a retired English professor and lifelong word-game enthusiast, and it has become a fun way for us to connect, compare strategies, and talk about language from two very different perspectives: hers as a human expert in words and mine as a data science student building algorithms.',
     technologies: ['Python', 'NumPy', 'Selenium', 'Scheduling', 'Pandas', 'Information Theory', 'Optimization'],
     category: 'Algorithms & Optimization',
@@ -55,7 +55,7 @@ Future improvements planned for this project include implementing dynamic weight
     image: '/images/projects/project2/mnist_digits.png',
     timeframe: 'December 2023 - January 2024',
     interactive: false,
-    githubUrl: 'https://github.com/Iva5858/mnist_digit_recognition',
+    githubUrl: 'https://github.com/Iva5858/neural-network-from-scratch-mnist',
     details: `The neural network architecture consists of a multi-layer feedforward design with two hidden layers. The input layer processes 28x28 pixel images (784 neurons total) from the MNIST dataset, which contains 60,000 training images of handwritten digits. The network structure flows from input through two hidden layers (40 and 20 neurons respectively) to an output layer with 10 neurons, each representing one digit class (0-9).
 
 The implementation uses the sigmoid activation function throughout all layers, which transforms the weighted inputs into values between 0 and 1. Training is performed using the backpropagation algorithm, which calculates gradients through the network layers in reverse order to update weights and biases. The mean squared error (MSE) cost function measures the difference between predicted and actual outputs during training.
