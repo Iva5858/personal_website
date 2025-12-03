@@ -23,11 +23,11 @@ export default function About() {
             {/* Bio */}
             <div className="animate-fadeIn" style={{ animationDelay: '0.2s' }}>
               <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                Hello, I'm Isaac
+                Hello, I'm Isaac!
               </h2>
               <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
                 <p>
-                  I am Isaac Vélez Aguirre, a Colombian-Spanish third-year student studying Data Science & Business Analytics
+                  I'm a Colombian-Spanish third-year student studying Data Science & Business Analytics
                   at the University of London and Business & Leadership at Forward College. I am passionate and curious,
                   constantly seeking opportunities for personal growth and learning.
                 </p>
