@@ -1,3 +1,15 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "About Isaac Vélez Aguirre – Data Science & Business Analytics student at University of London and Forward College. Education, experience, and background. Berlin, Germany.",
+  openGraph: {
+    title: "About Isaac Vélez Aguirre",
+    description:
+      "Bio, education, and experience of Isaac Vélez Aguirre – Data Science, AI, and Business Analytics.",
+  },
+};
 
 export default function About() {
   return (

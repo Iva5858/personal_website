@@ -1,17 +1,37 @@
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { getProjectById, projects } from '../data';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getProjectById, projects } from "../data";
 
 interface ProjectDetailPageProps {
-  params: Promise<{
-    id: string;
-  }>;
+  params: Promise<{ id: string }>;
 }
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id.toString(),
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: ProjectDetailPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const project = getProjectById(parseInt(id, 10));
+  if (!project) return { title: "Project" };
+  const shortDesc =
+    project.description.length > 160
+      ? project.description.slice(0, 157) + "..."
+      : project.description;
+  return {
+    title: project.title,
+    description: shortDesc,
+    openGraph: {
+      title: `${project.title} | Isaac Vélez Aguirre`,
+      description: shortDesc,
+      type: "article",
+    },
+  };
 }
 
 export default async function ProjectDetailPage({ params }: ProjectDetailPageProps) {

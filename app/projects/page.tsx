@@ -1,7 +1,17 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { projects } from './data';
+import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import { projects } from "./data";
 
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Projects by Isaac Vélez Aguirre – Data science, machine learning, AI, and LLM portfolio. Wordle solver, MNIST, statistical computing, and more.",
+  openGraph: {
+    title: "Projects | Isaac Vélez Aguirre",
+    description: "Portfolio of data science and ML projects by Isaac Vélez Aguirre.",
+  },
+};
 
 export default function Projects() {
   return (
