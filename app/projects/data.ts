@@ -6,6 +6,7 @@ export interface Project {
   category: string;
   image: string;
   timeframe: string;
+  current?: boolean; // true for the project currently being actively worked on
   interactive: boolean; // true for projects with interactive demos within the website
   demoUrl?: string; // internal path for interactive demos (e.g., '/projects/1/demo')
   externalLink?: string; // external URL (GitHub, external website, etc.) - doesn't mark as interactive
@@ -14,6 +15,151 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 6,
+    title: 'Stock Market Prediction & Evaluation Framework',
+    description: 'A Python framework for registering, running, and comparing stock return prediction models across 24 algorithms and 7 model families. Supports multi-horizon forecasting (1, 5, and 21 days), classification and regression targets, walk-forward cross-validation, SHAP feature importance, macroeconomic feature enrichment via the FRED API, automated strategy optimisation, portfolio construction with four allocators, and realistic backtesting with transaction costs.',
+    technologies: ['Python', 'XGBoost', 'LightGBM', 'CatBoost', 'Optuna', 'SHAP', 'scikit-learn', 'statsmodels', 'yfinance', 'FRED API', 'Pandas', 'NumPy'],
+    category: 'Machine Learning',
+    image: '/images/projects/project6/stock_model.jpg',
+    timeframe: 'May 2026 - Present',
+    current: true,
+    interactive: false,
+    githubUrl: 'https://github.com/Iva5858/stock_model_tester',
+    details: `Stock Model Tester is a personal research framework I built to systematically test and compare machine learning approaches to stock return prediction. The motivation came from wanting a rigorous, reproducible way to evaluate whether any given model actually adds predictive value over simple baselines — and to do so without the usual pitfalls of data leakage or look-ahead bias.
+
+Architecture (v2)
+The framework is built around a registry-everywhere pattern: every extensible category (data loaders, feature transforms, models, metrics, allocators, cost models) uses the same @register_* decorator, so adding a new component never requires changes to existing code. A strict dependency DAG enforces that no lower layer imports from a layer above it, keeping each module independently testable. Results are stored through a ResultsStore interface so the backend (currently file-based) can be swapped in a future version without touching strategy code.
+
+Models (24 total)
+The 24 registered models span seven families:
+- Baselines: NaiveLastValue, RollingMean, HistoricalMean (Goyal-Welch prevailing-mean benchmark)
+- Linear / Regularised: Ridge, Lasso, ElasticNet
+- Tree-Based Regression: XGBoost, LightGBM, CatBoost, RandomForest, SVR
+- Tree-Based Classification: XGBoostClassifier, LightGBMClassifier, RandomForestClassifier, LogisticRegressionClassifier
+- Classical Time Series: ARIMA, SARIMA, ETS, GARCH, MonteCarlo (GBM), OrnsteinUhlenbeck
+- Regime Models: HMM (3-state Gaussian), MarkovSwitching AR(1)
+- Ensemble: equal-weight forecast combination across all models
+
+PyTorch-based models (LSTM, Transformer, TCN) are written but disabled due to an OpenMP conflict on macOS ARM; they can be re-enabled on a CUDA Linux system.
+
+Evaluation & Walk-Forward Validation
+All evaluation is strictly out-of-sample. Walk-forward cross-validation (expanding or rolling window) refits the scaler on training data only before each fold, and predictions are aggregated across folds before any metric is computed. The step size automatically adjusts to avoid overlapping test windows at longer horizons. Metrics include RMSE, OOS R² (Campbell-Thompson 2008), directional accuracy, Sharpe, Calmar, Rank IC, and max drawdown for regression targets, and AUC-ROC, log loss, Brier score, and F1 for classification targets.
+
+Strategy Layer
+Beyond single-model evaluation, the framework includes a full strategy layer:
+- Model selection: walk-forward OOS model selection per ticker, writing a strategy_recommendation.yaml that can be passed directly to the run command.
+- Portfolio construction: four registered allocators (equal weight, signal-weighted, minimum variance with Ledoit-Wolf shrinkage, and maximum Sharpe tangency portfolio).
+- Backtesting: realistic simulation where transaction costs (configurable in basis points) are applied only on trade days (when position sign changes), producing gross/net equity curves and associated metrics.
+
+Hyperparameter Tuning
+Optuna integration enables automated hyperparameter search with a walk-forward OOS R² objective. Studies are persisted to SQLite and can be resumed across sessions. Best parameters are written to ticker-specific config overrides that are deep-merged on top of base configs at runtime.
+
+Macroeconomic Features (FRED API)
+The macro_fred transform enriches the feature set with seven FRED series: 10-year Treasury yield, 3-month T-bill, term spread, BAA and AAA corporate yields, default spread, and CPI inflation. Responses are cached locally with a 24-hour TTL and publication lags are enforced per series. If the API key is absent or FRED is unavailable, the transform logs a warning and the pipeline continues without macro columns.
+
+Testing
+The project has 89 tests covering baseline models, all 15 metrics including classification, feature pipeline shapes and no-leakage guarantees, full pipeline smoke tests for 4 models, config validation, CLI commands, registry completeness, DAG enforcement, and the v1/v2 results store interface.`,
+  },
+  {
+    id: 5,
+    title: 'Project NoCap: AI-Powered Fact-Checking for Instagram',
+    description:
+      'An AI-powered fact-checking assistant for Instagram that helps users quickly assess the credibility of posts and reels. By forwarding content to the @project_nocap account, users receive an automated analysis that highlights potential misinformation, bias, and links to more reliable sources, making it easier to navigate the information overload on social media.',
+    technologies: ['Python', 'LLMs', 'Prompt Engineering', 'CrewAI', 'API Development'],
+    category: 'LLMs & Prompt Engineering',
+    image: '/images/projects/project5/nocap_logo.png',
+    timeframe: 'September 2024 - Present',
+    interactive: false,
+    externalLink: 'https://projectnocap.org', // public landing page
+    details: `Project NoCap is an AI-powered fact-checking tool designed to help Instagram users verify the accuracy of posts and reels by leveraging large language models and carefully engineered prompts. The core idea is to make fact-checking as easy as sharing a post: users simply forward content to the @project_nocap account on Instagram, and in return they receive a structured, plain-language assessment of how trustworthy that content appears to be, along with additional context and sources.
+
+Problem & Motivation
+Misinformation spreads rapidly on social media, and studies show that false political content can be significantly more likely to be shared than true information. Many people struggle to judge whether what they see online is reliable. Project NoCap aims to lower the barrier to fact-checking by meeting users where they are, inside Instagram, and providing an on-demand credibility check that fits naturally into existing sharing workflows.
+
+How It Works (High Level)
+- Instagram users share a post or reel to the @project_nocap account.
+- The backend service retrieves the content and associated caption/metadata.
+- A fact-checking pipeline built around large language models analyzes the claim, checks for internal consistency, and searches for corroborating or contradicting information from more reputable sources.
+- The system generates a response that:
+  1. Flags potential red flags or misleading framing
+  2. Highlights bias or emotional manipulation where applicable
+  3. Suggests more trustworthy sources or neutral summaries
+  4. Explains the reasoning in accessible, non-technical language
+
+From a technical perspective, the project combines modern LLM capabilities with prompt engineering patterns tailored for fact-checking: separating claim extraction, evidence gathering, reasoning, and explanation into distinct stages, and enforcing transparency in the model's chain of thought in a user-friendly way (without exposing raw prompts to end users). The backend is implemented as a lightweight API service that can scale as usage grows.
+
+Future Directions
+We plan to implement Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to significantly improve the system's accuracy and efficiency. RAG will enable the system to retrieve relevant, up-to-date information from trusted knowledge bases before generating fact-checking responses, which should reduce hallucinations and improve the quality of evidence cited. MCP will help optimize the process time by streamlining how the model accesses and processes contextual information, making the fact-checking pipeline faster and more cost-effective.
+
+The project is currently progressing at a slower pace compared to last academic year due to time constraints, as team members balance university work and other commitments. However, we remain committed to advancing the project as best as we can.
+`,
+  },
+  {
+    id: 4,
+    title: 'Machine Learning Analysis of Diabetes-Related Health Outcomes (University of London Coursework)',
+    description: 'A machine learning coursework project for ST3189 (Machine Learning) at the University of London, applying unsupervised learning, classification, and regression to the 2024 CDC Behavioral Risk Factor Surveillance System (BRFSS) - a telephone survey of 457,670 US adults. PCA and K-means clustering reveal interpretable health dimensions and identify a high-risk subgroup with 55% diabetic prevalence. Seven classifiers achieve AUC scores of 0.75-0.81 for predicting diabetes status without clinical tests, and gradient boosting predicts physical health burden among confirmed diabetics with R-squared = 0.45.',
+    technologies: ['R', 'PCA', 'K-Means Clustering', 'Logistic Regression', 'Random Forest', 'Gradient Boosting', 'SVM', 'LDA and QDA', 'Lasso, Ridge, Elastic Net', 'Neural Network', 'ROSE', 'ggplot2', 'Statistical Analysis'],
+    category: 'Machine Learning',
+    image: '/images/projects/project4/ML_coursework.jpg',
+    timeframe: 'September 2025 - April 2026',
+    interactive: false,
+    externalLink: 'https://www.cdc.gov/brfss/annual_data/annual_data.htm',
+    details: `This project was completed as coursework for ST3189 (Machine Learning) at the University of London, contributing 30% to the final course grade. To maintain academic integrity, I am not sharing links to my submitted work or code. However, I can describe the full methodology and results.
+
+Personal Motivation
+This project holds particular personal significance for me, as my family has a history of diabetes. The BRFSS dataset - the world's largest continuously conducted telephone health survey - offered a rare opportunity to explore diabetes risk at population scale using the machine learning techniques I was learning in the course.
+
+Dataset
+The 2024 BRFSS contains 457,670 respondents across 345 variables. From the full extract, 60 variables were retained spanning demographics, health status, chronic conditions, healthcare access, health behaviours, and social determinants. The binary classification target (confirmed diabetic vs. non-diabetic) had a 5.9:1 imbalance, addressed using ROSE synthetic oversampling applied strictly within training folds to prevent data leakage.
+
+Part 1 - Unsupervised Learning: Population Structure
+
+Principal Component Analysis
+After one-hot encoding categorical variables, the dataset expanded to 113 features. The variance explained by each component decays gradually - the first two account for 4.8% and 3.9% respectively, with no single dominant factor. PC1 separates college-educated, physically active respondents from those with poor mental health and low activity. PC2 captures a healthcare access and age gradient. This diffuse structure directly explains why compressing the data before classification does not improve performance.
+
+K-Means Clustering
+K-means applied to the first ten PCs (K=6, silhouette score = 0.20, confirmed by Ward's hierarchical clustering) identifies six interpretable population subgroups. The highest-risk cluster - characterised by lower education, physical inactivity, and high comorbidity burden - has a diabetic prevalence of 55.34%, nearly three times higher than the lowest-risk cluster (19.99%).
+
+Part 2 - Classification: Predicting Diabetes Status
+
+Seven classifiers were trained on 50,000 respondents with an 80/20 train-test split:
+
+Logistic Regression: AUC = 0.815, Sensitivity = 0.773 (best overall AUC)
+LDA: AUC = 0.814, Sensitivity = 0.773
+SVM with RBF kernel: AUC = 0.809, Sensitivity = 0.767
+Random Forest (500 trees): AUC = 0.807, Sensitivity = 0.778 (best sensitivity)
+Naive Bayes: AUC = 0.786, Sensitivity = 0.708
+Decision Tree (pruned): AUC = 0.781, Sensitivity = 0.758
+Neural Network (12 hidden units): AUC = 0.746, Sensitivity = 0.663
+
+Results are broadly consistent with Xie et al.'s 2014 BRFSS benchmarks (AUC 0.718-0.795), confirming the survey-diabetes relationship has remained stable over a decade. The sensitivity improvement over the prior study (0.66-0.78 vs. 0.38-0.52) is methodological: ROSE shifts the decision threshold toward detecting the minority class, while AUC scores remain comparable.
+
+Training classifiers on PCA-compressed inputs (61 PCs, 80% variance threshold) consistently reduces sensitivity by 3-8 percentage points - a meaningful negative result. However, compression enables QDA (Quadratic Discriminant Analysis), which cannot be estimated stably in the full 113-feature space. QDA achieves the highest sensitivity of any model tested (0.787) and the lowest missed-diagnosis rate (0.213), making it the preferred approach for population screening where missing a diabetic case carries far higher cost than a false referral. Five-fold cross-validation on the Random Forest confirms stable out-of-sample performance: mean AUC = 0.804, mean sensitivity = 0.749.
+
+Part 3 - Regression: Physical Health Burden Among Diabetics
+
+Among 63,454 confirmed diabetics, the regression target is the number of days in the past 30 that physical health was not good. The distribution is strongly zero-inflated (47% report zero bad days; 16% report all 30 days), so a square-root transformation was applied before modelling.
+
+Eight regression approaches were compared on an 80/20 split:
+
+GBM Gradient Boosting (246 trees by CV): RMSE = 1.581, R-squared = 0.445, best overall
+OLS Linear Regression: RMSE = 1.590, R-squared = 0.439, nearly identical to GBM
+Random Forest (300 trees): RMSE = 1.598, R-squared = 0.433
+Lasso (51 predictors retained): RMSE = 1.623, R-squared = 0.415
+Elastic Net: RMSE = 1.623, R-squared = 0.415
+Ridge: RMSE = 1.631, R-squared = 0.410
+Principal Components Regression (63 PCs): RMSE = 1.666, R-squared = 0.384
+Weighted Least Squares: RMSE = 1.936, R-squared = 0.169, poor out-of-sample fit
+
+GBM and OLS perform nearly identically, suggesting the non-linear patterns are modest and that OLS coefficients tell an equally complete interpretive story. The two dominant predictors - consistent across OLS and Random Forest variable importance - are poor self-rated general health (coefficient = 2.74, p < 0.001) and difficulty walking or climbing stairs (coefficient = 0.735, p < 0.001). Loneliness and inability to work due to illness are also significant positive predictors. Older age groups above 65 show negative associations, plausibly because those surviving to older age with diabetes represent a healthier-than-average subset. Five-fold CV on the Random Forest gives mean RMSE = 1.62 and mean R-squared = 0.43.
+
+Key Takeaways
+
+Survey-based diabetes screening is feasible without clinical tests, achieving AUC above 0.80 across multiple models. PCA compression does not improve accuracy for existing classifiers but enables QDA, which achieves the highest sensitivity of any model tested. Physical health burden among diabetics is predictable at R-squared of approximately 0.44 from survey responses alone; the remaining variance likely requires clinical or longitudinal data to capture. The near-equivalence of GBM and OLS reinforces that interpretable models can match complex ones when non-linear patterns are modest. A two-stage hurdle model is recommended for future work to better handle the high proportion of zero responses in the physical health target.
+
+The complete BRFSS dataset and documentation can be accessed through the CDC link provided.`,
+  },
   {
     id: 1,
     title: 'Grandma vs. Data Scientist Student: Information-Theoretic Wordle Solver',
@@ -24,8 +170,8 @@ export const projects: Project[] = [
     timeframe: 'April 2025 - Present',
     interactive: false,
     githubUrl: 'https://github.com/Iva5858/wordle_optimizer',
-    details: `The core of the system is a data-driven optimization engine that treats Wordle as a sequential decision-making problem under uncertainty. 
-    
+    details: `The core of the system is a data-driven optimization engine that treats Wordle as a sequential decision-making problem under uncertainty.
+
     The model:
 - Uses Shannon entropy to score each possible guess based on how much information it is expected to reveal about the hidden word.
 - Maintains and updates a candidate set of valid answers after every guess by matching the observed color pattern (green, yellow, gray) against all remaining words.
@@ -119,105 +265,6 @@ Technical Approach
 The project required proficiency in both R and Python, with code organized in RMarkdown and Jupyter notebooks respectively. The workflow involved extensive data cleaning, feature engineering, statistical modeling, and visualization. For the flight data analysis, I implemented efficient data processing techniques to handle the large dataset size, including strategic subsetting, aggregation, and database-like operations.
 
 The complete dataset and supplementary information can be accessed through the Harvard Dataverse link provided.`,
-  },
-  {
-    id: 4,
-    title: 'Machine Learning Analysis of Diabetes-Related Health Outcomes (University of London Coursework)',
-    description: 'A machine learning coursework project for ST3189 (Machine Learning) at the University of London, applying unsupervised learning, classification, and regression to the 2024 CDC Behavioral Risk Factor Surveillance System (BRFSS) - a telephone survey of 457,670 US adults. PCA and K-means clustering reveal interpretable health dimensions and identify a high-risk subgroup with 55% diabetic prevalence. Seven classifiers achieve AUC scores of 0.75-0.81 for predicting diabetes status without clinical tests, and gradient boosting predicts physical health burden among confirmed diabetics with R-squared = 0.45.',
-    technologies: ['R', 'PCA', 'K-Means Clustering', 'Logistic Regression', 'Random Forest', 'Gradient Boosting', 'SVM', 'LDA and QDA', 'Lasso, Ridge, Elastic Net', 'Neural Network', 'ROSE', 'ggplot2', 'Statistical Analysis'],
-    category: 'Machine Learning',
-    image: '/images/projects/project4/ML_coursework.jpg',
-    timeframe: 'September 2025 - April 2026',
-    interactive: false,
-    externalLink: 'https://www.cdc.gov/brfss/annual_data/annual_data.htm',
-    details: `This project was completed as coursework for ST3189 (Machine Learning) at the University of London, contributing 30% to the final course grade. To maintain academic integrity, I am not sharing links to my submitted work or code. However, I can describe the full methodology and results.
-
-Personal Motivation
-This project holds particular personal significance for me, as my family has a history of diabetes. The BRFSS dataset - the world's largest continuously conducted telephone health survey - offered a rare opportunity to explore diabetes risk at population scale using the machine learning techniques I was learning in the course.
-
-Dataset
-The 2024 BRFSS contains 457,670 respondents across 345 variables. From the full extract, 60 variables were retained spanning demographics, health status, chronic conditions, healthcare access, health behaviours, and social determinants. The binary classification target (confirmed diabetic vs. non-diabetic) had a 5.9:1 imbalance, addressed using ROSE synthetic oversampling applied strictly within training folds to prevent data leakage.
-
-Part 1 - Unsupervised Learning: Population Structure
-
-Principal Component Analysis
-After one-hot encoding categorical variables, the dataset expanded to 113 features. The variance explained by each component decays gradually - the first two account for 4.8% and 3.9% respectively, with no single dominant factor. PC1 separates college-educated, physically active respondents from those with poor mental health and low activity. PC2 captures a healthcare access and age gradient. This diffuse structure directly explains why compressing the data before classification does not improve performance.
-
-K-Means Clustering
-K-means applied to the first ten PCs (K=6, silhouette score = 0.20, confirmed by Ward's hierarchical clustering) identifies six interpretable population subgroups. The highest-risk cluster - characterised by lower education, physical inactivity, and high comorbidity burden - has a diabetic prevalence of 55.34%, nearly three times higher than the lowest-risk cluster (19.99%).
-
-Part 2 - Classification: Predicting Diabetes Status
-
-Seven classifiers were trained on 50,000 respondents with an 80/20 train-test split:
-
-Logistic Regression: AUC = 0.815, Sensitivity = 0.773 (best overall AUC)
-LDA: AUC = 0.814, Sensitivity = 0.773
-SVM with RBF kernel: AUC = 0.809, Sensitivity = 0.767
-Random Forest (500 trees): AUC = 0.807, Sensitivity = 0.778 (best sensitivity)
-Naive Bayes: AUC = 0.786, Sensitivity = 0.708
-Decision Tree (pruned): AUC = 0.781, Sensitivity = 0.758
-Neural Network (12 hidden units): AUC = 0.746, Sensitivity = 0.663
-
-Results are broadly consistent with Xie et al.'s 2014 BRFSS benchmarks (AUC 0.718-0.795), confirming the survey-diabetes relationship has remained stable over a decade. The sensitivity improvement over the prior study (0.66-0.78 vs. 0.38-0.52) is methodological: ROSE shifts the decision threshold toward detecting the minority class, while AUC scores remain comparable.
-
-Training classifiers on PCA-compressed inputs (61 PCs, 80% variance threshold) consistently reduces sensitivity by 3-8 percentage points - a meaningful negative result. However, compression enables QDA (Quadratic Discriminant Analysis), which cannot be estimated stably in the full 113-feature space. QDA achieves the highest sensitivity of any model tested (0.787) and the lowest missed-diagnosis rate (0.213), making it the preferred approach for population screening where missing a diabetic case carries far higher cost than a false referral. Five-fold cross-validation on the Random Forest confirms stable out-of-sample performance: mean AUC = 0.804, mean sensitivity = 0.749.
-
-Part 3 - Regression: Physical Health Burden Among Diabetics
-
-Among 63,454 confirmed diabetics, the regression target is the number of days in the past 30 that physical health was not good. The distribution is strongly zero-inflated (47% report zero bad days; 16% report all 30 days), so a square-root transformation was applied before modelling.
-
-Eight regression approaches were compared on an 80/20 split:
-
-GBM Gradient Boosting (246 trees by CV): RMSE = 1.581, R-squared = 0.445, best overall
-OLS Linear Regression: RMSE = 1.590, R-squared = 0.439, nearly identical to GBM
-Random Forest (300 trees): RMSE = 1.598, R-squared = 0.433
-Lasso (51 predictors retained): RMSE = 1.623, R-squared = 0.415
-Elastic Net: RMSE = 1.623, R-squared = 0.415
-Ridge: RMSE = 1.631, R-squared = 0.410
-Principal Components Regression (63 PCs): RMSE = 1.666, R-squared = 0.384
-Weighted Least Squares: RMSE = 1.936, R-squared = 0.169, poor out-of-sample fit
-
-GBM and OLS perform nearly identically, suggesting the non-linear patterns are modest and that OLS coefficients tell an equally complete interpretive story. The two dominant predictors - consistent across OLS and Random Forest variable importance - are poor self-rated general health (coefficient = 2.74, p < 0.001) and difficulty walking or climbing stairs (coefficient = 0.735, p < 0.001). Loneliness and inability to work due to illness are also significant positive predictors. Older age groups above 65 show negative associations, plausibly because those surviving to older age with diabetes represent a healthier-than-average subset. Five-fold CV on the Random Forest gives mean RMSE = 1.62 and mean R-squared = 0.43.
-
-Key Takeaways
-
-Survey-based diabetes screening is feasible without clinical tests, achieving AUC above 0.80 across multiple models. PCA compression does not improve accuracy for existing classifiers but enables QDA, which achieves the highest sensitivity of any model tested. Physical health burden among diabetics is predictable at R-squared of approximately 0.44 from survey responses alone; the remaining variance likely requires clinical or longitudinal data to capture. The near-equivalence of GBM and OLS reinforces that interpretable models can match complex ones when non-linear patterns are modest. A two-stage hurdle model is recommended for future work to better handle the high proportion of zero responses in the physical health target.
-
-The complete BRFSS dataset and documentation can be accessed through the CDC link provided.`,
-  },
-  {
-    id: 5,
-    title: 'Project NoCap: AI-Powered Fact-Checking for Instagram',
-    description:
-      'An AI-powered fact-checking assistant for Instagram that helps users quickly assess the credibility of posts and reels. By forwarding content to the @project_nocap account, users receive an automated analysis that highlights potential misinformation, bias, and links to more reliable sources, making it easier to navigate the information overload on social media.',
-    technologies: ['Python', 'LLMs', 'Prompt Engineering', 'CrewAI', 'API Development'],
-    category: 'LLMs & Prompt Engineering',
-    image: '/images/projects/project5/nocap_logo.png',
-    timeframe: 'September 2024 - Present',
-    interactive: false,
-    externalLink: 'https://projectnocap.org', // public landing page
-    details: `Project NoCap is an AI-powered fact-checking tool designed to help Instagram users verify the accuracy of posts and reels by leveraging large language models and carefully engineered prompts. The core idea is to make fact-checking as easy as sharing a post: users simply forward content to the @project_nocap account on Instagram, and in return they receive a structured, plain-language assessment of how trustworthy that content appears to be, along with additional context and sources.
-
-Problem & Motivation
-Misinformation spreads rapidly on social media, and studies show that false political content can be significantly more likely to be shared than true information. Many people struggle to judge whether what they see online is reliable. Project NoCap aims to lower the barrier to fact-checking by meeting users where they are, inside Instagram, and providing an on-demand credibility check that fits naturally into existing sharing workflows.
-
-How It Works (High Level)
-- Instagram users share a post or reel to the @project_nocap account.
-- The backend service retrieves the content and associated caption/metadata.
-- A fact-checking pipeline built around large language models analyzes the claim, checks for internal consistency, and searches for corroborating or contradicting information from more reputable sources.
-- The system generates a response that:
-  1. Flags potential red flags or misleading framing
-  2. Highlights bias or emotional manipulation where applicable
-  3. Suggests more trustworthy sources or neutral summaries
-  4. Explains the reasoning in accessible, non-technical language
-
-From a technical perspective, the project combines modern LLM capabilities with prompt engineering patterns tailored for fact-checking: separating claim extraction, evidence gathering, reasoning, and explanation into distinct stages, and enforcing transparency in the model's chain of thought in a user-friendly way (without exposing raw prompts to end users). The backend is implemented as a lightweight API service that can scale as usage grows.
-
-Future Directions
-We plan to implement Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to significantly improve the system's accuracy and efficiency. RAG will enable the system to retrieve relevant, up-to-date information from trusted knowledge bases before generating fact-checking responses, which should reduce hallucinations and improve the quality of evidence cited. MCP will help optimize the process time by streamlining how the model accesses and processes contextual information, making the fact-checking pipeline faster and more cost-effective.
-
-The project is currently progressing at a slower pace compared to last academic year due to time constraints, as team members balance university work and other commitments. However, we remain committed to advancing the project as best as we can.
-`,
   },
 ];
 

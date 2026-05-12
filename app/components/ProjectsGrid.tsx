@@ -119,7 +119,18 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
 
             {/* Content */}
             <div className="p-5 flex flex-col grow" style={{ transform: 'translateZ(20px)' }}>
-              <p className="text-xs text-slate-400 dark:text-slate-500 mb-1.5">{project.timeframe}</p>
+              <div className="flex items-center gap-2 mb-1.5">
+                <p className="text-xs text-slate-400 dark:text-slate-500">{project.timeframe}</p>
+                {project.current && (
+                  <span className="flex items-center gap-1 px-1.5 py-0.5 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px] font-semibold rounded-md leading-none">
+                    <span className="relative flex h-1.5 w-1.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
+                    </span>
+                    Active
+                  </span>
+                )}
+              </div>
               <h3 className="text-sm font-bold mb-2 text-slate-900 dark:text-slate-100 line-clamp-2 leading-snug">
                 {project.title}
               </h3>
