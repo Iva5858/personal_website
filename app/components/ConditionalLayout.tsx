@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Navigation from './Navigation';
 import Footer from './Footer';
+import { CursorGlow } from './CursorGlow';
 
 export default function ConditionalLayout({
   children,
@@ -14,12 +15,12 @@ export default function ConditionalLayout({
 
   return (
     <>
+      <CursorGlow />
       {!isDemoRoute && <Navigation />}
-      <main className={isDemoRoute ? 'pt-0' : 'pt-16'}>
+      <main className={isDemoRoute ? 'pt-0' : 'pt-20'}>
         {children}
       </main>
       {!isDemoRoute && <Footer />}
     </>
   );
 }
-

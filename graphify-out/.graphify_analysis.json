@@ -1,0 +1,357 @@
+{
+  "communities": {
+    "0": [
+      "about_favicon",
+      "about_public_sans_font",
+      "readme_about_page",
+      "readme_app_about_tsx",
+      "readme_app_components",
+      "readme_app_contact_tsx",
+      "readme_app_page_tsx",
+      "readme_contact_page",
+      "readme_dual_licensing",
+      "readme_home_page",
+      "readme_mit_license",
+      "readme_nextjs",
+      "readme_personal_content_copyright",
+      "readme_personal_website",
+      "readme_tailwindcss",
+      "readme_typescript",
+      "readme_vercel",
+      "readme_web3forms"
+    ],
+    "1": [
+      "mnist_digits_class0",
+      "mnist_digits_class1",
+      "mnist_digits_class2",
+      "mnist_digits_class3",
+      "mnist_digits_class4",
+      "mnist_digits_class5",
+      "mnist_digits_class6",
+      "mnist_digits_class7",
+      "mnist_digits_class8",
+      "mnist_digits_class9",
+      "mnist_digits_dataset",
+      "mnist_digits_grayscale",
+      "mnist_digits_handwriting_variation",
+      "mnist_digits_image",
+      "mnist_digits_project2"
+    ],
+    "2": [
+      "readme_app_projects_data_ts",
+      "readme_app_projects_id_tsx",
+      "readme_app_projects_tsx",
+      "readme_data_science_domain",
+      "readme_project_diabetes",
+      "readme_project_mcmc",
+      "readme_project_mnist",
+      "readme_project_nocap",
+      "readme_project_wordle",
+      "readme_projects_page"
+    ],
+    "3": [
+      "concept_brand_logos",
+      "concept_ui_icon_set",
+      "file_svg_file_icon",
+      "globe_svg_globe_icon",
+      "next_svg_nextjs_logo",
+      "public_dir_static_assets",
+      "vercel_svg_vercel_logo",
+      "window_svg_browser_window_icon"
+    ],
+    "4": [
+      "androidchrome192_icon",
+      "androidchrome512_icon",
+      "appletouchicon_icon",
+      "brand_iv_logo",
+      "favicon16_icon",
+      "favicon32_icon"
+    ],
+    "5": [
+      "wordle_image_color_feedback_system",
+      "wordle_image_mobile_ui",
+      "wordle_image_nytimes_platform",
+      "wordle_image_project1",
+      "wordle_image_project_screenshot",
+      "wordle_image_wordle_game"
+    ],
+    "6": [
+      "nocap_brand_baseball_cap",
+      "nocap_color_navy",
+      "nocap_color_red",
+      "nocap_logo_png",
+      "nocap_project5",
+      "nocap_visual_red_cap"
+    ],
+    "7": [
+      "app_projects_2_demo_page_tsx",
+      "page_clearcanvas",
+      "page_draw",
+      "page_startdrawing",
+      "page_stopdrawing"
+    ],
+    "8": [
+      "coursework_image_aerospace_engineering",
+      "coursework_image_airbus_a350",
+      "coursework_image_composite_materials",
+      "coursework_image_flight_mechanics",
+      "coursework_image_project3"
+    ],
+    "9": [
+      "ML_coursework_caduceus_symbol",
+      "ML_coursework_healthcare_domain",
+      "ML_coursework_machine_learning",
+      "ML_coursework_project4"
+    ],
+    "10": [
+      "app_contact_page_tsx",
+      "page_handlechange",
+      "page_handlesubmit"
+    ],
+    "11": [
+      "app_projects_id_page_tsx",
+      "page_generatemetadata",
+      "page_generatestaticparams"
+    ],
+    "12": [
+      "app_api_wordle_route_ts",
+      "route_get",
+      "route_post"
+    ],
+    "13": [
+      "isaac_icon_avatar_style",
+      "isaac_icon_personal_website",
+      "isaac_icon_profile_image"
+    ],
+    "14": [
+      "app_robots_ts",
+      "robots_robots"
+    ],
+    "15": [
+      "app_sitemap_ts",
+      "sitemap_sitemap"
+    ],
+    "16": [
+      "app_layout_tsx",
+      "layout_rootlayout"
+    ],
+    "17": [
+      "app_contact_layout_tsx",
+      "layout_contactlayout"
+    ],
+    "18": [
+      "app_projects_data_ts",
+      "data_getprojectbyid"
+    ],
+    "19": [
+      "app_projects_1_demo_page_tsx",
+      "page_wordledemo"
+    ],
+    "20": [
+      "app_projects_id_not_found_tsx",
+      "not_found_notfound"
+    ],
+    "21": [
+      "app_components_conditionallayout_tsx",
+      "conditionallayout_conditionallayout"
+    ],
+    "22": [
+      "app_components_footer_tsx",
+      "footer_footer"
+    ],
+    "23": [
+      "next_env_d_ts"
+    ],
+    "24": [
+      "next_config_ts"
+    ],
+    "25": [
+      "app_page_tsx"
+    ],
+    "26": [
+      "app_projects_page_tsx"
+    ],
+    "27": [
+      "app_about_page_tsx"
+    ],
+    "28": [
+      "app_components_navigation_tsx"
+    ],
+    "29": [
+      "concept_favicon_set"
+    ]
+  },
+  "cohesion": {
+    "0": 0.13,
+    "1": 0.15,
+    "2": 0.31,
+    "3": 0.46,
+    "4": 0.53,
+    "5": 0.4,
+    "6": 0.47,
+    "7": 0.4,
+    "8": 0.5,
+    "9": 0.83,
+    "10": 0.67,
+    "11": 0.67,
+    "12": 0.67,
+    "13": 0.67,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0
+  },
+  "gods": [
+    {
+      "id": "mnist_digits_image",
+      "label": "MNIST Digits Dataset Visualization",
+      "edges": 14
+    },
+    {
+      "id": "readme_personal_website",
+      "label": "Isaac V\u00e9lez Aguirre Personal Website & Portfolio",
+      "edges": 12
+    },
+    {
+      "id": "readme_projects_page",
+      "label": "Projects Page (/projects)",
+      "edges": 10
+    },
+    {
+      "id": "readme_data_science_domain",
+      "label": "Data Science & Business Analytics Domain",
+      "edges": 6
+    },
+    {
+      "id": "brand_iv_logo",
+      "label": "IV Brand Logo (White IV on Gray Rounded Rectangle)",
+      "edges": 5
+    },
+    {
+      "id": "readme_contact_page",
+      "label": "Contact Page (/contact)",
+      "edges": 4
+    },
+    {
+      "id": "readme_app_components",
+      "label": "app/components/* \u2013 Shared Layout/Navigation/Footer",
+      "edges": 4
+    },
+    {
+      "id": "window_svg_browser_window_icon",
+      "label": "Browser Window Icon SVG",
+      "edges": 4
+    },
+    {
+      "id": "coursework_image_airbus_a350",
+      "label": "Airbus A350 Aircraft",
+      "edges": 4
+    },
+    {
+      "id": "readme_home_page",
+      "label": "Home Page (/)",
+      "edges": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Isaac V\u00e9lez Aguirre Personal Website & Portfolio",
+      "target": "Favicon (Public Sans Font)",
+      "source_files": [
+        "README.md",
+        "favicon_related_files/about.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Favicon (Public Sans Font)` unexpectedly reaches hub `Isaac V\u00e9lez Aguirre Personal Website & Portfolio`"
+    },
+    {
+      "source": "Favicon 16x16 Icon",
+      "target": "Favicon 32x32 Icon",
+      "source_files": [
+        "favicon_related_files/favicon-16x16.png",
+        "favicon_related_files/favicon-32x32.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Apple Touch Icon (180x180)",
+      "target": "Android Chrome Icon 192x192",
+      "source_files": [
+        "favicon_related_files/apple-touch-icon.png",
+        "favicon_related_files/android-chrome-192x192.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Android Chrome Icon 192x192",
+      "target": "Android Chrome Icon 512x512",
+      "source_files": [
+        "favicon_related_files/android-chrome-192x192.png",
+        "favicon_related_files/android-chrome-512x512.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "File Icon SVG",
+      "target": "Browser Window Icon SVG",
+      "source_files": [
+        "public/file.svg",
+        "public/window.svg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Isaac V\u00e9lez Aguirre Personal Website & Portfolio` connect `Community 0` to `Community 2`?",
+      "why": "High betweenness centrality (0.036) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Projects Page (/projects)` connect `Community 2` to `Community 0`?",
+      "why": "High betweenness centrality (0.019) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `MNIST Digits Dataset Visualization` (e.g. with `Project 2 (ML/Deep Learning Project)` and `Grayscale 28x28 Image Representation`) actually correct?",
+      "why": "`MNIST Digits Dataset Visualization` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `Data Science & Business Analytics Domain` (e.g. with `Neural Network for MNIST Digit Recognition` and `MCMC & Flight Data Analysis`) actually correct?",
+      "why": "`Data Science & Business Analytics Domain` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Next.js 14 (App Router)`, `TypeScript`, `Tailwind CSS` to the rest of the system?",
+      "why": "29 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

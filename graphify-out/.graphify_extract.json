@@ -1,0 +1,3334 @@
+{
+  "nodes": [
+    {
+      "id": "next_env_d_ts",
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "next_config_ts",
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_robots_ts",
+      "label": "robots.ts",
+      "file_type": "code",
+      "source_file": "app/robots.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "robots_robots",
+      "label": "robots()",
+      "file_type": "code",
+      "source_file": "app/robots.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "app_sitemap_ts",
+      "label": "sitemap.ts",
+      "file_type": "code",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "sitemap_sitemap",
+      "label": "sitemap()",
+      "file_type": "code",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "app_layout_tsx",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "layout_rootlayout",
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L99"
+    },
+    {
+      "id": "app_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_contact_layout_tsx",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/contact/layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "layout_contactlayout",
+      "label": "ContactLayout()",
+      "file_type": "code",
+      "source_file": "app/contact/layout.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "app_contact_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "page_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "page_handlechange",
+      "label": "handleChange()",
+      "file_type": "code",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L76"
+    },
+    {
+      "id": "app_projects_data_ts",
+      "label": "data.ts",
+      "file_type": "code",
+      "source_file": "app/projects/data.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "data_getprojectbyid",
+      "label": "getProjectById()",
+      "file_type": "code",
+      "source_file": "app/projects/data.ts",
+      "source_location": "L197"
+    },
+    {
+      "id": "app_projects_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_projects_1_demo_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/projects/1/demo/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "page_wordledemo",
+      "label": "WordleDemo()",
+      "file_type": "code",
+      "source_file": "app/projects/1/demo/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_projects_id_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "page_generatestaticparams",
+      "label": "generateStaticParams()",
+      "file_type": "code",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "page_generatemetadata",
+      "label": "generateMetadata()",
+      "file_type": "code",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "app_projects_id_not_found_tsx",
+      "label": "not-found.tsx",
+      "file_type": "code",
+      "source_file": "app/projects/[id]/not-found.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "not_found_notfound",
+      "label": "NotFound()",
+      "file_type": "code",
+      "source_file": "app/projects/[id]/not-found.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_projects_2_demo_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "page_startdrawing",
+      "label": "startDrawing()",
+      "file_type": "code",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "page_draw",
+      "label": "draw()",
+      "file_type": "code",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L51"
+    },
+    {
+      "id": "page_stopdrawing",
+      "label": "stopDrawing()",
+      "file_type": "code",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L68"
+    },
+    {
+      "id": "page_clearcanvas",
+      "label": "clearCanvas()",
+      "file_type": "code",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L72"
+    },
+    {
+      "id": "app_about_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/about/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_conditionallayout_tsx",
+      "label": "ConditionalLayout.tsx",
+      "file_type": "code",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "conditionallayout_conditionallayout",
+      "label": "ConditionalLayout()",
+      "file_type": "code",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "app_components_footer_tsx",
+      "label": "Footer.tsx",
+      "file_type": "code",
+      "source_file": "app/components/Footer.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "footer_footer",
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "app/components/Footer.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_components_navigation_tsx",
+      "label": "Navigation.tsx",
+      "file_type": "code",
+      "source_file": "app/components/Navigation.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_api_wordle_route_ts",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "route_post",
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "route_get",
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L119"
+    },
+    {
+      "id": "readme_personal_website",
+      "label": "Isaac V\u00e9lez Aguirre Personal Website & Portfolio",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Isaac V\u00e9lez Aguirre",
+      "contributor": null
+    },
+    {
+      "id": "readme_nextjs",
+      "label": "Next.js 14 (App Router)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "20",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_typescript",
+      "label": "TypeScript",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_tailwindcss",
+      "label": "Tailwind CSS",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "22",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_web3forms",
+      "label": "Web3Forms API",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "23",
+      "source_url": "https://web3forms.com/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_vercel",
+      "label": "Vercel Deployment",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "65",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_home_page",
+      "label": "Home Page (/)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_about_page",
+      "label": "About Page (/about)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_projects_page",
+      "label": "Projects Page (/projects)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_contact_page",
+      "label": "Contact Page (/contact)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "16",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_project_wordle",
+      "label": "Wordle Optimizer (Information Theory)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_project_mnist",
+      "label": "Neural Network for MNIST Digit Recognition",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_project_mcmc",
+      "label": "MCMC & Flight Data Analysis",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "13",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_project_diabetes",
+      "label": "ML Coursework on Diabetes Health Outcomes",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "14",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_project_nocap",
+      "label": "Project NoCap \u2013 AI Fact-Checking Assistant for Instagram",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_page_tsx",
+      "label": "app/page.tsx \u2013 Home Page File",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "56",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_about_tsx",
+      "label": "app/about/page.tsx \u2013 About Page File",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "57",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_projects_data_ts",
+      "label": "app/projects/data.ts \u2013 Project Metadata",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "58",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_projects_tsx",
+      "label": "app/projects/page.tsx \u2013 Projects Listing",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "59",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_projects_id_tsx",
+      "label": "app/projects/[id]/page.tsx \u2013 Dynamic Project Pages",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "60",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_contact_tsx",
+      "label": "app/contact/page.tsx \u2013 Contact Page File",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "61",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_app_components",
+      "label": "app/components/* \u2013 Shared Layout/Navigation/Footer",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "62",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_mit_license",
+      "label": "MIT License (Code/Template)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "77",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_personal_content_copyright",
+      "label": "Personal Content Copyright",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "79",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_dual_licensing",
+      "label": "Dual Licensing Approach",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "75",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_data_science_domain",
+      "label": "Data Science & Business Analytics Domain",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "about_favicon",
+      "label": "Favicon (Public Sans Font)",
+      "file_type": "document",
+      "source_file": "favicon_related_files/about.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "about_public_sans_font",
+      "label": "Public Sans Font",
+      "file_type": "document",
+      "source_file": "favicon_related_files/about.txt",
+      "source_location": "3",
+      "source_url": "https://fonts.gstatic.com/s/publicsans/v20/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww0pX189fg.ttf",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "favicon16_icon",
+      "label": "Favicon 16x16 Icon",
+      "file_type": "image",
+      "source_file": "favicon_related_files/favicon-16x16.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "favicon32_icon",
+      "label": "Favicon 32x32 Icon",
+      "file_type": "image",
+      "source_file": "favicon_related_files/favicon-32x32.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "appletouchicon_icon",
+      "label": "Apple Touch Icon (180x180)",
+      "file_type": "image",
+      "source_file": "favicon_related_files/apple-touch-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "androidchrome192_icon",
+      "label": "Android Chrome Icon 192x192",
+      "file_type": "image",
+      "source_file": "favicon_related_files/android-chrome-192x192.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "androidchrome512_icon",
+      "label": "Android Chrome Icon 512x512",
+      "file_type": "image",
+      "source_file": "favicon_related_files/android-chrome-512x512.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_iv_logo",
+      "label": "IV Brand Logo (White IV on Gray Rounded Rectangle)",
+      "file_type": "image",
+      "source_file": "favicon_related_files/android-chrome-512x512.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_favicon_set",
+      "label": "Website Favicon Asset Set",
+      "file_type": "document",
+      "source_file": "favicon_related_files/",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "file_svg_file_icon",
+      "label": "File Icon SVG",
+      "file_type": "image",
+      "source_file": "public/file.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "vercel_svg_vercel_logo",
+      "label": "Vercel Logo SVG",
+      "file_type": "image",
+      "source_file": "public/vercel.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "next_svg_nextjs_logo",
+      "label": "Next.js Logo SVG",
+      "file_type": "image",
+      "source_file": "public/next.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "globe_svg_globe_icon",
+      "label": "Globe Icon SVG",
+      "file_type": "image",
+      "source_file": "public/globe.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "window_svg_browser_window_icon",
+      "label": "Browser Window Icon SVG",
+      "file_type": "image",
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dir_static_assets",
+      "label": "Public Static Assets Directory",
+      "file_type": "document",
+      "source_file": "public",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ui_icon_set",
+      "label": "UI Icon Set",
+      "file_type": "document",
+      "source_file": "public",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_brand_logos",
+      "label": "Brand / Platform Logos",
+      "file_type": "document",
+      "source_file": "public",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "isaac_icon_profile_image",
+      "label": "Isaac Icon Profile Image",
+      "file_type": "image",
+      "source_file": "public/images/isaac_icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Iva5858",
+      "contributor": null
+    },
+    {
+      "id": "isaac_icon_avatar_style",
+      "label": "3D Cartoon Avatar Style",
+      "file_type": "image",
+      "source_file": "public/images/isaac_icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "isaac_icon_personal_website",
+      "label": "Personal Website",
+      "file_type": "document",
+      "source_file": "public/images/isaac_icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Iva5858",
+      "contributor": null
+    },
+    {
+      "id": "wordle_image_project_screenshot",
+      "label": "Wordle Game Screenshot",
+      "file_type": "image",
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wordle_image_wordle_game",
+      "label": "Wordle Word Game",
+      "file_type": "image",
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wordle_image_nytimes_platform",
+      "label": "New York Times (nytimes.com)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wordle_image_color_feedback_system",
+      "label": "Color Feedback System (Green/Yellow/Gray)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wordle_image_mobile_ui",
+      "label": "Mobile Web UI (iPhone)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wordle_image_project1",
+      "label": "Project 1 (Personal Website)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "coursework_image_airbus_a350",
+      "label": "Airbus A350 Aircraft",
+      "file_type": "image",
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "coursework_image_project3",
+      "label": "Project 3 Coursework",
+      "file_type": "image",
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "coursework_image_aerospace_engineering",
+      "label": "Aerospace Engineering",
+      "file_type": "image",
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "coursework_image_composite_materials",
+      "label": "Composite Materials / Carbon Fiber",
+      "file_type": "image",
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "coursework_image_flight_mechanics",
+      "label": "Flight Mechanics / Aerodynamics",
+      "file_type": "image",
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ML_coursework_caduceus_symbol",
+      "label": "Caduceus Medical Symbol",
+      "file_type": "image",
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ML_coursework_project4",
+      "label": "ML Coursework Project 4",
+      "file_type": "image",
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ML_coursework_healthcare_domain",
+      "label": "Healthcare / Medical Domain",
+      "file_type": "image",
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ML_coursework_machine_learning",
+      "label": "Machine Learning",
+      "file_type": "image",
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nocap_logo_png",
+      "label": "NoCap Logo Image",
+      "file_type": "image",
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nocap_project5",
+      "label": "NoCap Project (Project 5)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nocap_brand_baseball_cap",
+      "label": "Baseball Cap Brand Mark",
+      "file_type": "image",
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nocap_visual_red_cap",
+      "label": "Red Baseball Cap Visual Element",
+      "file_type": "image",
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nocap_color_red",
+      "label": "Red Color Palette",
+      "file_type": "image",
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nocap_color_navy",
+      "label": "Navy Blue Accent Color",
+      "file_type": "image",
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_image",
+      "label": "MNIST Digits Dataset Visualization",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_dataset",
+      "label": "MNIST Handwritten Digits Dataset",
+      "file_type": "document",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class0",
+      "label": "Digit Class 0 (Zero)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class1",
+      "label": "Digit Class 1 (One)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class2",
+      "label": "Digit Class 2 (Two)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class3",
+      "label": "Digit Class 3 (Three)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class4",
+      "label": "Digit Class 4 (Four)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class5",
+      "label": "Digit Class 5 (Five)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class6",
+      "label": "Digit Class 6 (Six)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class7",
+      "label": "Digit Class 7 (Seven)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class8",
+      "label": "Digit Class 8 (Eight)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_class9",
+      "label": "Digit Class 9 (Nine)",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_project2",
+      "label": "Project 2 (ML/Deep Learning Project)",
+      "file_type": "document",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_handwriting_variation",
+      "label": "Handwriting Style Variation",
+      "file_type": "document",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mnist_digits_grayscale",
+      "label": "Grayscale 28x28 Image Representation",
+      "file_type": "image",
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "next_env_d_ts",
+      "target": "next_dev_types_routes_d_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "next-env.d.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "next_config_ts",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_robots_ts",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/robots.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_robots_ts",
+      "target": "robots_robots",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/robots.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sitemap_ts",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sitemap_ts",
+      "target": "app_projects_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sitemap_ts",
+      "target": "sitemap_sitemap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "google",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_globals_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_components_conditionallayout",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "image",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_public_images_isaac_icon_png",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_projects_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_layout_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_layout_tsx",
+      "target": "layout_contactlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/layout.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_page_tsx",
+      "target": "page_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_page_tsx",
+      "target": "page_handlechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_data_ts",
+      "target": "data_getprojectbyid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/data.ts",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "image",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "app_projects_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_1_demo_page_tsx",
+      "target": "page_wordledemo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/1/demo/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "app_projects_id_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "page_generatestaticparams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "page_generatemetadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_not_found_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/not-found.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_not_found_tsx",
+      "target": "not_found_notfound",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/not-found.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_startdrawing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_draw",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_stopdrawing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_clearcanvas",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "app_about_page_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/about/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "app_components_navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "app_components_footer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "conditionallayout_conditionallayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_footer_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Footer.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_footer_tsx",
+      "target": "footer_footer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Footer.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_navigation_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navigation.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_navigation_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navigation.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_navigation_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navigation.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_wordle_route_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_wordle_route_ts",
+      "target": "route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_wordle_route_ts",
+      "target": "route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "next_env_d_ts",
+      "target": "next_dev_types_routes_d_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "next-env.d.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "next_config_ts",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_robots_ts",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/robots.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_robots_ts",
+      "target": "robots_robots",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/robots.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sitemap_ts",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sitemap_ts",
+      "target": "app_projects_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sitemap_ts",
+      "target": "sitemap_sitemap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "google",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_globals_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_components_conditionallayout",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "image",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_public_images_isaac_icon_png",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_projects_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_layout_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_layout_tsx",
+      "target": "layout_contactlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/layout.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_page_tsx",
+      "target": "page_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "app_contact_page_tsx",
+      "target": "page_handlechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/contact/page.tsx",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_data_ts",
+      "target": "data_getprojectbyid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/data.ts",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "image",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_page_tsx",
+      "target": "app_projects_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_1_demo_page_tsx",
+      "target": "page_wordledemo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/1/demo/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "app_projects_id_data",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "page_generatestaticparams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_page_tsx",
+      "target": "page_generatemetadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_not_found_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/not-found.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_id_not_found_tsx",
+      "target": "not_found_notfound",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[id]/not-found.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_startdrawing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_draw",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_stopdrawing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "app_projects_2_demo_page_tsx",
+      "target": "page_clearcanvas",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/2/demo/page.tsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "app_about_page_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/about/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "app_components_navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "app_components_footer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_conditionallayout_tsx",
+      "target": "conditionallayout_conditionallayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ConditionalLayout.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_footer_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Footer.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_footer_tsx",
+      "target": "footer_footer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Footer.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_navigation_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navigation.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_navigation_tsx",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navigation.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_navigation_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/Navigation.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_wordle_route_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_wordle_route_ts",
+      "target": "route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_wordle_route_ts",
+      "target": "route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/wordle/route.ts",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_nextjs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_typescript",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_tailwindcss",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "22",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_web3forms",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "23",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_vercel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "65",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_home_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "8",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_about_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "9",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_projects_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "10",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_contact_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "16",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_projects_page",
+      "target": "readme_project_wordle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "11",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_projects_page",
+      "target": "readme_project_mnist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "12",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_projects_page",
+      "target": "readme_project_mcmc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "13",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_projects_page",
+      "target": "readme_project_diabetes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "14",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_projects_page",
+      "target": "readme_project_nocap",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "15",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_contact_page",
+      "target": "readme_web3forms",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "16",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_app_page_tsx",
+      "target": "readme_home_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "56",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_app_about_tsx",
+      "target": "readme_about_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "57",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_app_projects_tsx",
+      "target": "readme_projects_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "59",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_app_projects_id_tsx",
+      "target": "readme_projects_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "60",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_app_contact_tsx",
+      "target": "readme_contact_page",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "61",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_app_projects_data_ts",
+      "target": "readme_projects_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "58",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_app_projects_data_ts",
+      "target": "readme_app_projects_id_tsx",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": "58",
+      "weight": 0.85
+    },
+    {
+      "source": "readme_dual_licensing",
+      "target": "readme_mit_license",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "75",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_dual_licensing",
+      "target": "readme_personal_content_copyright",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "75",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_dual_licensing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "75",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "readme_data_science_domain",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "4",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_project_mnist",
+      "target": "readme_data_science_domain",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
+      "source_location": "12",
+      "weight": 0.8
+    },
+    {
+      "source": "readme_project_mcmc",
+      "target": "readme_data_science_domain",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
+      "source_location": "13",
+      "weight": 0.8
+    },
+    {
+      "source": "readme_project_diabetes",
+      "target": "readme_data_science_domain",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
+      "source_location": "14",
+      "weight": 0.8
+    },
+    {
+      "source": "readme_project_nocap",
+      "target": "readme_data_science_domain",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "README.md",
+      "source_location": "15",
+      "weight": 0.7
+    },
+    {
+      "source": "about_favicon",
+      "target": "about_public_sans_font",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "favicon_related_files/about.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_personal_website",
+      "target": "about_favicon",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "readme_app_components",
+      "target": "readme_home_page",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
+      "source_location": "62",
+      "weight": 0.8
+    },
+    {
+      "source": "readme_app_components",
+      "target": "readme_about_page",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
+      "source_location": "62",
+      "weight": 0.8
+    },
+    {
+      "source": "readme_app_components",
+      "target": "readme_projects_page",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
+      "source_location": "62",
+      "weight": 0.8
+    },
+    {
+      "source": "readme_app_components",
+      "target": "readme_contact_page",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
+      "source_location": "62",
+      "weight": 0.8
+    },
+    {
+      "source": "readme_project_wordle",
+      "target": "readme_data_science_domain",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "README.md",
+      "source_location": "11",
+      "weight": 0.65
+    },
+    {
+      "source": "favicon16_icon",
+      "target": "brand_iv_logo",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "favicon_related_files/favicon-16x16.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "favicon32_icon",
+      "target": "brand_iv_logo",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "favicon_related_files/favicon-32x32.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "appletouchicon_icon",
+      "target": "brand_iv_logo",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "favicon_related_files/apple-touch-icon.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "androidchrome192_icon",
+      "target": "brand_iv_logo",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "favicon_related_files/android-chrome-192x192.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "androidchrome512_icon",
+      "target": "brand_iv_logo",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "favicon_related_files/android-chrome-512x512.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "favicon16_icon",
+      "target": "favicon32_icon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "favicon_related_files/favicon-16x16.png",
+      "source_location": null,
+      "weight": 0.95
+    },
+    {
+      "source": "androidchrome192_icon",
+      "target": "androidchrome512_icon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "favicon_related_files/android-chrome-192x192.png",
+      "source_location": null,
+      "weight": 0.95
+    },
+    {
+      "source": "appletouchicon_icon",
+      "target": "androidchrome192_icon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "favicon_related_files/apple-touch-icon.png",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "file_svg_file_icon",
+      "target": "public_dir_static_assets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/file.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "vercel_svg_vercel_logo",
+      "target": "public_dir_static_assets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/vercel.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "next_svg_nextjs_logo",
+      "target": "public_dir_static_assets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/next.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "globe_svg_globe_icon",
+      "target": "public_dir_static_assets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/globe.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "window_svg_browser_window_icon",
+      "target": "public_dir_static_assets",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "file_svg_file_icon",
+      "target": "concept_ui_icon_set",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/file.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "globe_svg_globe_icon",
+      "target": "concept_ui_icon_set",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/globe.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "window_svg_browser_window_icon",
+      "target": "concept_ui_icon_set",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "vercel_svg_vercel_logo",
+      "target": "concept_brand_logos",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/vercel.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "next_svg_nextjs_logo",
+      "target": "concept_brand_logos",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/next.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "vercel_svg_vercel_logo",
+      "target": "next_svg_nextjs_logo",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/vercel.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "globe_svg_globe_icon",
+      "target": "window_svg_browser_window_icon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "public/globe.svg",
+      "source_location": null,
+      "weight": 0.7
+    },
+    {
+      "source": "file_svg_file_icon",
+      "target": "window_svg_browser_window_icon",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "public/file.svg",
+      "source_location": null,
+      "weight": 0.65
+    },
+    {
+      "source": "isaac_icon_profile_image",
+      "target": "isaac_icon_avatar_style",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/isaac_icon.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "isaac_icon_profile_image",
+      "target": "isaac_icon_personal_website",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/images/isaac_icon.png",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "wordle_image_project_screenshot",
+      "target": "wordle_image_wordle_game",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "wordle_image_wordle_game",
+      "target": "wordle_image_nytimes_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "wordle_image_project_screenshot",
+      "target": "wordle_image_mobile_ui",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "wordle_image_wordle_game",
+      "target": "wordle_image_color_feedback_system",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "wordle_image_project_screenshot",
+      "target": "wordle_image_project1",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "wordle_image_mobile_ui",
+      "target": "wordle_image_nytimes_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project1/wordle_image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "coursework_image_project3",
+      "target": "coursework_image_airbus_a350",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "coursework_image_airbus_a350",
+      "target": "coursework_image_aerospace_engineering",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "coursework_image_airbus_a350",
+      "target": "coursework_image_composite_materials",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "coursework_image_airbus_a350",
+      "target": "coursework_image_flight_mechanics",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "weight": 0.8
+    },
+    {
+      "source": "coursework_image_project3",
+      "target": "coursework_image_aerospace_engineering",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/images/projects/project3/coursework_image.jpg",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "ML_coursework_project4",
+      "target": "ML_coursework_caduceus_symbol",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ML_coursework_caduceus_symbol",
+      "target": "ML_coursework_healthcare_domain",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "ML_coursework_project4",
+      "target": "ML_coursework_healthcare_domain",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "ML_coursework_project4",
+      "target": "ML_coursework_machine_learning",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "ML_coursework_machine_learning",
+      "target": "ML_coursework_healthcare_domain",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public/images/projects/project4/ML_coursework.jpg",
+      "source_location": null,
+      "weight": 0.8
+    },
+    {
+      "source": "nocap_logo_png",
+      "target": "nocap_project5",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "nocap_logo_png",
+      "target": "nocap_brand_baseball_cap",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "nocap_brand_baseball_cap",
+      "target": "nocap_visual_red_cap",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "nocap_visual_red_cap",
+      "target": "nocap_color_red",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "nocap_visual_red_cap",
+      "target": "nocap_color_navy",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "weight": 0.7
+    },
+    {
+      "source": "nocap_logo_png",
+      "target": "nocap_color_red",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "weight": 0.95
+    },
+    {
+      "source": "nocap_brand_baseball_cap",
+      "target": "nocap_project5",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/projects/project5/nocap_logo.png",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_dataset",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_project2",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class0",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class3",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class4",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class5",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class6",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class7",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class8",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_class9",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_handwriting_variation",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_image",
+      "target": "mnist_digits_grayscale",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_dataset",
+      "target": "mnist_digits_grayscale",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mnist_digits_dataset",
+      "target": "mnist_digits_handwriting_variation",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public/images/projects/project2/mnist_digits.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "portfolio_pages_and_files",
+      "label": "Portfolio Pages Implemented by Source Files",
+      "nodes": [
+        "readme_home_page",
+        "readme_about_page",
+        "readme_projects_page",
+        "readme_contact_page",
+        "readme_app_page_tsx",
+        "readme_app_about_tsx",
+        "readme_app_projects_tsx",
+        "readme_app_contact_tsx"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    },
+    {
+      "id": "ml_projects_data_science",
+      "label": "ML/Statistics Projects in Data Science Domain",
+      "nodes": [
+        "readme_project_mnist",
+        "readme_project_mcmc",
+        "readme_project_diabetes",
+        "readme_project_nocap",
+        "readme_data_science_domain"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md"
+    },
+    {
+      "id": "dual_license_components",
+      "label": "Dual License: MIT Code + Personal Content Copyright",
+      "nodes": [
+        "readme_dual_licensing",
+        "readme_mit_license",
+        "readme_personal_content_copyright"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    },
+    {
+      "id": "all_favicon_assets_brand",
+      "label": "All Favicon Assets Share IV Brand Identity",
+      "nodes": [
+        "favicon16_icon",
+        "favicon32_icon",
+        "appletouchicon_icon",
+        "androidchrome192_icon",
+        "androidchrome512_icon"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.97,
+      "source_file": "favicon_related_files/"
+    },
+    {
+      "id": "ui_icons_set",
+      "label": "UI Icon Set \u2014 file, globe, window icons bundled as interface affordances",
+      "nodes": [
+        "file_svg_file_icon",
+        "globe_svg_globe_icon",
+        "window_svg_browser_window_icon"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public"
+    },
+    {
+      "id": "platform_brand_assets",
+      "label": "Platform Brand Assets \u2014 Vercel and Next.js logos as deployment/framework branding",
+      "nodes": [
+        "vercel_svg_vercel_logo",
+        "next_svg_nextjs_logo",
+        "public_dir_static_assets"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.82,
+      "source_file": "public"
+    },
+    {
+      "id": "wordle_game_ui_context",
+      "label": "Wordle Game UI in Mobile Web Context",
+      "nodes": [
+        "wordle_image_wordle_game",
+        "wordle_image_mobile_ui",
+        "wordle_image_nytimes_platform",
+        "wordle_image_color_feedback_system"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project1/wordle_image.jpg"
+    },
+    {
+      "id": "aerospace_coursework_context",
+      "label": "Aerospace Engineering Coursework Context",
+      "nodes": [
+        "coursework_image_project3",
+        "coursework_image_airbus_a350",
+        "coursework_image_aerospace_engineering",
+        "coursework_image_composite_materials",
+        "coursework_image_flight_mechanics"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public/images/projects/project3/coursework_image.jpg"
+    },
+    {
+      "id": "ml_healthcare_project",
+      "label": "ML Applied to Healthcare Domain Project",
+      "nodes": [
+        "ML_coursework_project4",
+        "ML_coursework_machine_learning",
+        "ML_coursework_healthcare_domain"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public/images/projects/project4/ML_coursework.jpg"
+    },
+    {
+      "id": "nocap_brand_identity",
+      "label": "NoCap Brand Identity System",
+      "nodes": [
+        "nocap_logo_png",
+        "nocap_brand_baseball_cap",
+        "nocap_color_red",
+        "nocap_color_navy"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/projects/project5/nocap_logo.png"
+    },
+    {
+      "id": "mnist_all_digit_classes",
+      "label": "All 10 MNIST Digit Classes (0-9)",
+      "nodes": [
+        "mnist_digits_class0",
+        "mnist_digits_class1",
+        "mnist_digits_class2",
+        "mnist_digits_class3",
+        "mnist_digits_class4",
+        "mnist_digits_class5",
+        "mnist_digits_class6",
+        "mnist_digits_class7",
+        "mnist_digits_class8",
+        "mnist_digits_class9"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/images/projects/project2/mnist_digits.png"
+    },
+    {
+      "id": "mnist_visualization_context",
+      "label": "MNIST Dataset Visualization in Project 2",
+      "nodes": [
+        "mnist_digits_image",
+        "mnist_digits_dataset",
+        "mnist_digits_project2"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/images/projects/project2/mnist_digits.png"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

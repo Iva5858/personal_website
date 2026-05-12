@@ -1,0 +1,1 @@
+{"nodes": [{"id": "app_about_page_tsx", "label": "page.tsx", "file_type": "code", "source_file": "app/about/page.tsx", "source_location": "L1"}], "edges": [{"source": "app_about_page_tsx", "target": "next", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "app/about/page.tsx", "source_location": "L1", "weight": 1.0}]}

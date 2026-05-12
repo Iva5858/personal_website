@@ -36,7 +36,7 @@ To validate the approach, the optimizer was tested against 1,355 historical Word
 Beyond the optimization engine, the project includes a Selenium-based automation layer that plays the game directly on the NYT website. This layer:
 - Launches a headless browser, handles cookies and modals, and interacts with the on-screen keyboard.
 - Sends each model-generated guess to the game and reads back the resulting color pattern from the board.
-- Logs each game with both technical explanations (entropy, candidate reductions) and simple language explanations of why each guess was chosen. The logging format is intentionally split into a \"data scientist\" view and a \"grandma\" view: one focuses on bits of information, probability updates, and search space size, while the other explains in plain language which letters we learned about and why the next word makes sense. This makes it easy for my grandmother to follow the model’s reasoning and has turned the logs into a shared artifact we can read together and discuss after each game.
+- Logs each game with both technical explanations (entropy, candidate reductions) and simple language explanations of why each guess was chosen. The logging format is intentionally split into a \"data scientist\" view and a \"grandma\" view: one focuses on bits of information, probability updates, and search space size, while the other explains in plain language which letters we learned about and why the next word makes sense. This makes it easy for my grandmother to follow the model's reasoning and has turned the logs into a shared artifact we can read together and discuss after each game.
 
 Overall, the project showcases how concepts from information theory, probabilistic reasoning, and algorithm design can be used to build an end‑to‑end, automated game-playing system with measurable performance.
 
@@ -122,41 +122,68 @@ The complete dataset and supplementary information can be accessed through the H
   },
   {
     id: 4,
-    title: 'In Progress: Machine Learning Analysis of Diabetes-Related Health Outcomes (University of London Coursework)',
-    description: 'An ongoing machine learning coursework project for ST3189 (Machine Learning) at the University of London, analyzing diabetes-related health outcomes using the CDC Behavioral Risk Factor Surveillance System (BRFSS) dataset. The project requires implementing three core machine learning tasks: unsupervised learning for population segmentation, regression for continuous target variables, and classification for categorical outcomes. The analysis will compare multiple techniques for regression and classification tasks, with a focus on presenting results in an accessible format for audiences with quantitative backgrounds but no prior machine learning knowledge.',
-    technologies: ['R','Machine Learning', 'Statistical Analysis'],
+    title: 'Machine Learning Analysis of Diabetes-Related Health Outcomes (University of London Coursework)',
+    description: 'A machine learning coursework project for ST3189 (Machine Learning) at the University of London, applying unsupervised learning, classification, and regression to the 2024 CDC Behavioral Risk Factor Surveillance System (BRFSS) - a telephone survey of 457,670 US adults. PCA and K-means clustering reveal interpretable health dimensions and identify a high-risk subgroup with 55% diabetic prevalence. Seven classifiers achieve AUC scores of 0.75-0.81 for predicting diabetes status without clinical tests, and gradient boosting predicts physical health burden among confirmed diabetics with R-squared = 0.45.',
+    technologies: ['R', 'PCA', 'K-Means Clustering', 'Logistic Regression', 'Random Forest', 'Gradient Boosting', 'SVM', 'LDA and QDA', 'Lasso, Ridge, Elastic Net', 'Neural Network', 'ROSE', 'ggplot2', 'Statistical Analysis'],
     category: 'Machine Learning',
     image: '/images/projects/project4/ML_coursework.jpg',
-    timeframe: 'September 2025 - Present',
+    timeframe: 'September 2025 - April 2026',
     interactive: false,
-    externalLink: 'https://www.cdc.gov/brfss/annual_data/annual_data.htm', // dataset source
-    details: `This project is an ongoing coursework assignment for ST3189 (Machine Learning) at the University of London, which contributes 30% to the final course grade. The project is currently in its early stages, and I am working with the CDC Behavioral Risk Factor Surveillance System (BRFSS) dataset to analyze diabetes-related health outcomes. To maintain academic integrity, I am not sharing links to my work-in-progress or the full assignment instructions. However, I can describe the project's scope and the dataset being used.
+    externalLink: 'https://www.cdc.gov/brfss/annual_data/annual_data.htm',
+    details: `This project was completed as coursework for ST3189 (Machine Learning) at the University of London, contributing 30% to the final course grade. To maintain academic integrity, I am not sharing links to my submitted work or code. However, I can describe the full methodology and results.
 
 Personal Motivation
-This project holds particular personal significance for me, as my family has a history of diabetes. This personal connection drives my interest in using machine learning to derive meaningful insights from leading health-related surveillance data. The BRFSS dataset, being the world's largest continuously conducted health survey system, provides an exceptional opportunity to explore patterns, risk factors, and outcomes related to diabetes at a population level. By applying unsupervised learning, regression, and classification techniques to this comprehensive dataset, I hope to uncover insights that could contribute to understanding diabetes-related health outcomes and potentially inform preventive strategies.
+This project holds particular personal significance for me, as my family has a history of diabetes. The BRFSS dataset - the world's largest continuously conducted telephone health survey - offered a rare opportunity to explore diabetes risk at population scale using the machine learning techniques I was learning in the course.
 
-Project Requirements
-The coursework requires completing three core machine learning tasks, which can be implemented on one or more real-world datasets:
+Dataset
+The 2024 BRFSS contains 457,670 respondents across 345 variables. From the full extract, 60 variables were retained spanning demographics, health status, chronic conditions, healthcare access, health behaviours, and social determinants. The binary classification target (confirmed diabetic vs. non-diabetic) had a 5.9:1 imbalance, addressed using ROSE synthetic oversampling applied strictly within training folds to prevent data leakage.
 
-1. Unsupervised Learning: Identifying homogeneous population groups or applying dimension reduction techniques that can be used in the context of the empirical application.
+Part 1 - Unsupervised Learning: Population Structure
 
-2. Regression: Addressing problems with continuous target variable(s), using multiple regression techniques and comparing their results.
+Principal Component Analysis
+After one-hot encoding categorical variables, the dataset expanded to 113 features. The variance explained by each component decays gradually - the first two account for 4.8% and 3.9% respectively, with no single dominant factor. PC1 separates college-educated, physically active respondents from those with poor mental health and low activity. PC2 captures a healthcare access and age gradient. This diffuse structure directly explains why compressing the data before classification does not improve performance.
 
-3. Classification: Addressing problems with categorical target variable(s), using multiple classification techniques and comparing their results.
+K-Means Clustering
+K-means applied to the first ten PCs (K=6, silhouette score = 0.20, confirmed by Ward's hierarchical clustering) identifies six interpretable population subgroups. The highest-risk cluster - characterised by lower education, physical inactivity, and high comorbidity burden - has a diabetic prevalence of 55.34%, nearly three times higher than the lowest-risk cluster (19.99%).
 
-The project requires presenting each dataset, identifying research questions that can be addressed by the analysis, and ideally presenting relevant existing literature to contrast results against. The ability to present and interpret results in accessible language is regarded as equally important as technical implementation.
+Part 2 - Classification: Predicting Diabetes Status
 
- Dataset: CDC Behavioral Risk Factor Surveillance System (BRFSS)
- The BRFSS is a collaborative surveillance project between US states, participating territories, and the CDC’s National Center for Chronic Disease Prevention and Health Promotion. It is the world’s largest continuously conducted telephone health survey system, designed to collect uniform state-specific data on health risk behaviors, chronic diseases and conditions, access to care, and use of preventive health services related to the leading causes of death and disability in the United States. Since 1984 it has expanded to all 50 states, the District of Columbia, and several US territories, using a dual-frame design that combines landline and cellular telephone interviews with iterative proportional fitting (“raking”) to produce representative, weighted estimates.
+Seven classifiers were trained on 50,000 respondents with an 80/20 train-test split:
 
- For this project, I am focusing on diabetes-related aspects, using variables from the core questionnaire and optional modules on prediabetes and diabetes available in recent BRFSS cycles (for example, 2024). The BRFSS data provides rich opportunities for all three required tasks:
- - Unsupervised learning can identify distinct health behavior or risk-factor clusters, or reduce dimensionality across hundreds of survey variables
- - Regression can model continuous outcomes such as health-related quality-of-life indices or number of days with poor physical or mental health
- - Classification can predict categorical outcomes such as diabetes diagnosis status, prediabetes status, or self-reported diabetes management behaviors
+Logistic Regression: AUC = 0.815, Sensitivity = 0.773 (best overall AUC)
+LDA: AUC = 0.814, Sensitivity = 0.773
+SVM with RBF kernel: AUC = 0.809, Sensitivity = 0.767
+Random Forest (500 trees): AUC = 0.807, Sensitivity = 0.778 (best sensitivity)
+Naive Bayes: AUC = 0.786, Sensitivity = 0.708
+Decision Tree (pruned): AUC = 0.781, Sensitivity = 0.758
+Neural Network (12 hidden units): AUC = 0.746, Sensitivity = 0.663
 
-The final deliverable will be a 10-page article in A4 format (excluding title page, table of contents, and references) along with well-commented code in R or Python (RMarkdown or Jupyter notebook format). The analysis will be presented in a paper-like format, avoiding highly technical language where possible, with an audience in mind of people with quantitative backgrounds but no prior machine learning knowledge.
+Results are broadly consistent with Xie et al.'s 2014 BRFSS benchmarks (AUC 0.718-0.795), confirming the survey-diabetes relationship has remained stable over a decade. The sensitivity improvement over the prior study (0.66-0.78 vs. 0.38-0.52) is methodological: ROSE shifts the decision threshold toward detecting the minority class, while AUC scores remain comparable.
 
-The complete BRFSS dataset and documentation can be accessed through the CDC link provided, which offers annual survey data from 1990 to present, along with technical documentation, questionnaires, and supplementary information.`,
+Training classifiers on PCA-compressed inputs (61 PCs, 80% variance threshold) consistently reduces sensitivity by 3-8 percentage points - a meaningful negative result. However, compression enables QDA (Quadratic Discriminant Analysis), which cannot be estimated stably in the full 113-feature space. QDA achieves the highest sensitivity of any model tested (0.787) and the lowest missed-diagnosis rate (0.213), making it the preferred approach for population screening where missing a diabetic case carries far higher cost than a false referral. Five-fold cross-validation on the Random Forest confirms stable out-of-sample performance: mean AUC = 0.804, mean sensitivity = 0.749.
+
+Part 3 - Regression: Physical Health Burden Among Diabetics
+
+Among 63,454 confirmed diabetics, the regression target is the number of days in the past 30 that physical health was not good. The distribution is strongly zero-inflated (47% report zero bad days; 16% report all 30 days), so a square-root transformation was applied before modelling.
+
+Eight regression approaches were compared on an 80/20 split:
+
+GBM Gradient Boosting (246 trees by CV): RMSE = 1.581, R-squared = 0.445, best overall
+OLS Linear Regression: RMSE = 1.590, R-squared = 0.439, nearly identical to GBM
+Random Forest (300 trees): RMSE = 1.598, R-squared = 0.433
+Lasso (51 predictors retained): RMSE = 1.623, R-squared = 0.415
+Elastic Net: RMSE = 1.623, R-squared = 0.415
+Ridge: RMSE = 1.631, R-squared = 0.410
+Principal Components Regression (63 PCs): RMSE = 1.666, R-squared = 0.384
+Weighted Least Squares: RMSE = 1.936, R-squared = 0.169, poor out-of-sample fit
+
+GBM and OLS perform nearly identically, suggesting the non-linear patterns are modest and that OLS coefficients tell an equally complete interpretive story. The two dominant predictors - consistent across OLS and Random Forest variable importance - are poor self-rated general health (coefficient = 2.74, p < 0.001) and difficulty walking or climbing stairs (coefficient = 0.735, p < 0.001). Loneliness and inability to work due to illness are also significant positive predictors. Older age groups above 65 show negative associations, plausibly because those surviving to older age with diabetes represent a healthier-than-average subset. Five-fold CV on the Random Forest gives mean RMSE = 1.62 and mean R-squared = 0.43.
+
+Key Takeaways
+
+Survey-based diabetes screening is feasible without clinical tests, achieving AUC above 0.80 across multiple models. PCA compression does not improve accuracy for existing classifiers but enables QDA, which achieves the highest sensitivity of any model tested. Physical health burden among diabetics is predictable at R-squared of approximately 0.44 from survey responses alone; the remaining variance likely requires clinical or longitudinal data to capture. The near-equivalence of GBM and OLS reinforces that interpretable models can match complex ones when non-linear patterns are modest. A two-stage hurdle model is recommended for future work to better handle the high proportion of zero responses in the physical health target.
+
+The complete BRFSS dataset and documentation can be accessed through the CDC link provided.`,
   },
   {
     id: 5,
@@ -184,7 +211,7 @@ How It Works (High Level)
   3. Suggests more trustworthy sources or neutral summaries
   4. Explains the reasoning in accessible, non-technical language
 
-From a technical perspective, the project combines modern LLM capabilities with prompt engineering patterns tailored for fact-checking: separating claim extraction, evidence gathering, reasoning, and explanation into distinct stages, and enforcing transparency in the model’s chain of thought in a user-friendly way (without exposing raw prompts to end users). The backend is implemented as a lightweight API service that can scale as usage grows.
+From a technical perspective, the project combines modern LLM capabilities with prompt engineering patterns tailored for fact-checking: separating claim extraction, evidence gathering, reasoning, and explanation into distinct stages, and enforcing transparency in the model's chain of thought in a user-friendly way (without exposing raw prompts to end users). The backend is implemented as a lightweight API service that can scale as usage grows.
 
 Future Directions
 We plan to implement Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) to significantly improve the system's accuracy and efficiency. RAG will enable the system to retrieve relevant, up-to-date information from trusted knowledge bases before generating fact-checking responses, which should reduce hallucinations and improve the quality of evidence cited. MCP will help optimize the process time by streamlining how the model accesses and processes contextual information, making the fact-checking pipeline faster and more cost-effective.
