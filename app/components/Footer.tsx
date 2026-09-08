@@ -1,9 +1,8 @@
 import Link from 'next/link';
 
 export default function Footer() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const lastUpdated = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  const year = new Date().getFullYear();
+  const lastUpdated = 'May 15, 2026';
 
   return (
     <footer className="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
@@ -81,7 +80,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 border-t border-slate-100 dark:border-slate-800 text-center text-xs text-slate-400 dark:text-slate-500">
-          © {year} Isaac Vélez Aguirre · All rights reserved · Updated {lastUpdated}
+          © {year} Isaac Vélez Aguirre · All rights reserved · Site last updated {lastUpdated}
         </div>
       </div>
     </footer>

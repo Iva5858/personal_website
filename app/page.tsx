@@ -227,6 +227,11 @@ export default function Home() {
               LinkedIn
             </a>
           </motion.div>
+
+          {/* Last updated */}
+          <motion.p variants={heroItem} className="text-xs text-slate-300 dark:text-slate-700 mt-5">
+            Site information current as of May 15, 2026
+          </motion.p>
         </motion.div>
 
         {/* Scroll indicator */}
