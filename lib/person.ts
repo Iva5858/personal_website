@@ -3,7 +3,7 @@ import { siteUrl } from "./site";
 export const personSchema = {
   "@type": "Person",
   name: "Isaac Velez",
-  alternateName: ["Isaac Vélez Aguirre", "Isaac Velez Aguirre", "Isaac Vélez"],
+  alternateName: ["Isaac Vélez Aguirre", "Isaac Velez Aguirre", "Isaac Vélez", "Isaac Aguirre"],
   url: siteUrl,
   jobTitle: "MS in Artificial Intelligence Student, Robotics & Perception",
   description:

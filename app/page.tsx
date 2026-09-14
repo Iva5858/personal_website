@@ -129,7 +129,7 @@ export default function Home() {
       {/* ══════════════════════════════════════════════════
           HERO
       ══════════════════════════════════════════════════ */}
-      <section className="-mt-20 pt-20 relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white dark:bg-slate-950">
+      <section className="-mt-20 pt-20 pb-16 sm:pb-0 relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white dark:bg-slate-950">
 
         {/* Interactive particle network */}
         <ParticleField />
@@ -246,14 +246,14 @@ export default function Home() {
           </motion.div>
 
           {/* Last updated */}
-          <motion.p variants={heroItem} className="text-xs text-slate-300 dark:text-slate-700 mt-5">
+          <motion.p variants={heroItem} className="text-xs text-slate-300 dark:text-slate-700 mt-3">
             Site information current as of {process.env.NEXT_PUBLIC_BUILD_DATE}
           </motion.p>
         </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-400 dark:text-slate-600 text-xs select-none pointer-events-none"
+          className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-1 text-slate-400 dark:text-slate-600 text-xs select-none pointer-events-none"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.8, duration: 0.8 }}
