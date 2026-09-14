@@ -22,10 +22,17 @@ export async function generateMetadata({ params }: ProjectDetailPageProps): Prom
   return {
     title: project.title,
     description: shortDesc,
+    alternates: { canonical: `/projects/${project.id}` },
     openGraph: {
-      title: `${project.title} | Isaac Vélez Aguirre`,
-      description: shortDesc,
       type: "article",
+      url: `/projects/${project.id}`,
+      title: `${project.title} | Isaac Velez`,
+      description: shortDesc,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Isaac Velez`,
+      description: shortDesc,
     },
   };
 }

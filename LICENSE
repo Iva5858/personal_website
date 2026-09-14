@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Isaac Vélez Aguirre
+Copyright (c) 2025 Isaac Velez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,12 +28,12 @@ The MIT License above applies to the codebase structure, components, and
 technical implementation, which you are free to use as a template for your 
 own portfolio website.
 
-However, the following personal content remains the exclusive property of 
-Isaac Vélez Aguirre and is protected by copyright:
+However, the following personal content remains the exclusive property of
+Isaac Velez and is protected by copyright:
 
 1. Personal Information & Biography
-   - All biographical text, personal descriptions, and educational/professional 
-     history in `app/about/page.tsx`, `app/page.tsx`, and related files
+   - All biographical text, personal descriptions, and educational/professional
+     history in `app/page.tsx`, `app/resume/page.tsx`, and related files
    - Personal images, including but not limited to profile pictures and 
      images in the `public/images/` directory
 

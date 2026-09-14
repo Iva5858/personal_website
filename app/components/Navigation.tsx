@@ -38,7 +38,7 @@ export default function Navigation() {
             href="/"
             className="text-sm font-bold text-slate-900 dark:text-slate-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200 tracking-tight"
           >
-            Isaac Vélez
+            Isaac Velez
           </Link>
 
           {/* Desktop links */}

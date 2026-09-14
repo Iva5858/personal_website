@@ -7,10 +7,13 @@ import { ProjectsGrid } from "@/app/components/ProjectsGrid";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Projects by Isaac Vélez Aguirre – Data science, machine learning, AI, and LLM portfolio. Wordle solver, MNIST, statistical computing, and more.",
+    "Projects by Isaac Velez – AI, robotics, machine learning, and LLM portfolio. Stock market prediction, AI fact-checking, and applied research.",
+  alternates: { canonical: "/projects" },
   openGraph: {
-    title: "Projects | Isaac Vélez Aguirre",
-    description: "Portfolio of data science and ML projects by Isaac Vélez Aguirre.",
+    type: "website",
+    url: "/projects",
+    title: "Projects | Isaac Velez",
+    description: "Portfolio of AI, robotics, and machine learning projects by Isaac Velez.",
   },
 };
 

@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="text-sm font-bold text-slate-900 dark:text-slate-100 mb-2">
-              Isaac Vélez Aguirre
+              Isaac Velez
             </p>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
               MSAI @ Columbia University<br />
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 border-t border-slate-100 dark:border-slate-800 text-center text-xs text-slate-400 dark:text-slate-500">
-          © {year} Isaac Vélez Aguirre · All rights reserved · Site last updated {lastUpdated}
+          © {year} Isaac Velez · All rights reserved · Site last updated {lastUpdated}
         </div>
       </div>
     </footer>

@@ -20,7 +20,7 @@ export const projects: Project[] = [
     title: 'Vera',
     description:
       'Volunteer contributing AI engineer on Vera, a free AI-powered fact-checking service accessible by phone and WhatsApp, built by the NGO LaReponse.Tech.',
-    technologies: ['LLMs', 'Prompt Engineering'],
+    technologies: ['Python', 'LLMs', 'Machine Learning', 'Prompt Engineering', 'API Development'],
     category: 'AI / LLM Applications',
     image: '/images/projects/project8/vera_logo.png',
     timeframe: 'June 2026 - Present',

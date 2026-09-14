@@ -1,7 +1,7 @@
-## Isaac Vélez Aguirre – Personal Website & Portfolio
+## Isaac Velez – Personal Website & Portfolio
 
 Source code for my personal portfolio, built with **Next.js 16 (App Router)** and **TypeScript**.  
-It showcases my background in **Data Science & Business Analytics**, my education and experience, and a curated set of projects in machine learning, statistical computing, quantitative finance, and LLMs.
+It showcases my background as an MS in AI (Robotics & Perception) student at Columbia University, and a curated set of projects in machine learning, robotics, statistical computing, quantitative finance, and LLMs.
 
 ---
 
@@ -10,9 +10,9 @@ It showcases my background in **Data Science & Business Analytics**, my educatio
 | Route | Description |
 |---|---|
 | `/` | Hero, about preview, featured projects |
-| `/about` | Bio, education, modules, professional experience |
 | `/projects` | Project grid with filter cards |
 | `/projects/[id]` | Individual project detail pages |
+| `/resume` | Inline PDF résumé viewer, download link, "last updated" date |
 | `/contact` | Contact form (Web3Forms) plus email and social links |
 | `/llms.txt` | Machine-readable markdown index for AI/LLM crawlers |
 | `/sitemap.xml` | Auto-generated sitemap |
@@ -26,12 +26,16 @@ All project metadata lives in `app/projects/data.ts` and is the single source of
 
 | # | Project | Category | Status |
 |---|---------|----------|--------|
-| 6 | Stock Market Prediction & Evaluation Framework | Machine Learning | Active |
+| 8 | Vera | AI / LLM Applications | Active |
+| 7 | LLM-Assisted Creative Curation (research) | Research | Active |
+| 6 | Stock Market Prediction & Evaluation Framework | Machine Learning | Completed |
 | 5 | Project NoCap – AI Fact-Checking for Instagram | LLMs & Prompt Engineering | Ongoing |
 | 4 | Diabetes ML Analysis – BRFSS (University of London) | Machine Learning | Completed |
 | 1 | Information-Theoretic Wordle Solver | Algorithms & Optimization | Ongoing |
 | 2 | Handwritten Digit Recognition from Scratch (MNIST) | Machine Learning | Completed |
 | 3 | MCMC & Flight Data Analysis (University of London) | Statistical Computing | Completed |
+
+Each project's cover image lives in `public/images/projects/project<id>/` — the folder number is kept in sync with the project's `id`.
 
 ---
 
@@ -58,8 +62,8 @@ app/
 ├── sitemap.ts                  # Auto-generated sitemap from projects/data.ts
 ├── llms.txt/
 │   └── route.ts                # /llms.txt — markdown index for AI/LLM crawlers
-├── about/
-│   └── page.tsx                # About page
+├── resume/
+│   └── page.tsx                # Résumé viewer (PDF embed + download + last-updated date)
 ├── contact/
 │   ├── layout.tsx
 │   └── page.tsx                # Contact form (Web3Forms)
@@ -81,9 +85,10 @@ app/
     ├── Navigation.tsx
     ├── ParticleField.tsx
     ├── ProjectsGrid.tsx         # Project cards with 3D tilt effect
-    ├── ScrambleText.tsx
-    ├── SkillsSection.tsx
-    └── TimelineSection.tsx
+    └── ScrambleText.tsx
+
+scripts/
+└── set-build-date.mjs          # Writes NEXT_PUBLIC_BUILD_DATE into .env.local (see below)
 ```
 
 ---
@@ -105,7 +110,13 @@ app/
    NEXT_PUBLIC_SITE_URL=https://yourdomain.com   # used in sitemap/llms.txt
    ```
 
-3. **Run the development server**
+   `NEXT_PUBLIC_BUILD_DATE` doesn't need to be set manually — `scripts/set-build-date.mjs` writes it into `.env.local` automatically before every `dev` and `build` run (via the `predev`/`prebuild` npm hooks), merging with whatever else is already in that file. It powers the "last updated" text in the footer, hero, and résumé page, so it stays current on every deploy without manual edits.
+
+3. **Add your résumé**
+
+   Drop your PDF at `public/Velez_Isaac_Resume_Website.pdf` — the `/resume` page and its download link both reference that exact path.
+
+4. **Run the development server**
 
    ```bash
    npm run dev
@@ -121,19 +132,21 @@ All project data is centralised in `app/projects/data.ts`. Add an entry to the `
 
 ```ts
 {
-  id: 7,                             // unique, used for routing (/projects/7)
+  id: 9,                             // unique, used for routing (/projects/9)
   title: 'My Project',
   description: 'Short description shown on the card.',
   technologies: ['Python', 'NumPy'],
   category: 'Machine Learning',
-  image: '/images/projects/project7/cover.jpg',
-  timeframe: 'January 2026 - Present',
+  image: '/images/projects/project9/cover.jpg',  // keep the folder number in sync with id
+  timeframe: 'January 2027 - Present',
   current: true,                     // optional — shows pulsing "Active" badge
   interactive: false,
   githubUrl: 'https://github.com/...',
   details: `Extended write-up shown on the detail page.`,
 }
 ```
+
+`image` is optional — omit it and the card falls back to a gradient placeholder with the project's initial. If the image is a logo rather than a photo, add the project's `id` to the `object-contain` check in `ProjectsGrid.tsx` so it isn't cropped.
 
 The entry is automatically picked up by the project grid, the detail page router, the sitemap, and `/llms.txt`.
 
@@ -151,7 +164,7 @@ The entry is automatically picked up by the project grid, the detail page router
 
 Deployed on **Vercel** (Next.js default settings).
 
-- Build command: `npm run build`
+- Build command: `npm run build` — the `prebuild` hook regenerates `NEXT_PUBLIC_BUILD_DATE` on every deploy, so the site's "last updated" mentions always reflect the actual deploy date.
 - `lightningcss-linux-x64-gnu` is declared in `optionalDependencies` to ensure the correct native binary is installed on Vercel's Linux build machines (required by Tailwind CSS v4).
 
 ---
@@ -161,6 +174,6 @@ Deployed on **Vercel** (Next.js default settings).
 **Dual licensing:**
 
 - **Code / template** — MIT License. Free to use as a portfolio template.
-- **Personal content** — All biographical text, project descriptions, and images are copyright Isaac Vélez Aguirre. Do not reproduce or repurpose personal content without permission.
+- **Personal content** — All biographical text, project descriptions, and images are copyright Isaac Velez. Do not reproduce or repurpose personal content without permission.
 
 In short: use the structure, replace the content.

@@ -1,8 +1,5 @@
 import { projects } from "@/app/projects/data";
-
-const baseUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://isaac-velez.com");
+import { siteUrl as baseUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -39,7 +36,7 @@ export function GET() {
     })
     .join("\n\n---\n\n");
 
-  const body = `# Isaac Vélez Aguirre – Portfolio
+  const body = `# Isaac Velez – Portfolio
 
 > MS in Artificial Intelligence student (Columbia University, Robotics & Perception). Based in New York, NY.
 > Interests: robotics, perception, machine learning, statistical computing, LLMs.
@@ -52,7 +49,7 @@ export function GET() {
 
 ## About
 
-Isaac Vélez Aguirre is an MS in Artificial Intelligence student at Columbia University, focused on robotics and perception, currently based in New York, NY. He holds a BSc in Data Science & Business Analytics from the University of London and has interned at Opplane and Autsai. He works across Python, R, and machine learning. His portfolio spans personal ML research frameworks, university coursework projects, and applied AI products.
+Isaac Velez is an MS in Artificial Intelligence student at Columbia University, focused on robotics and perception, currently based in New York, NY. He holds a BSc in Data Science & Business Analytics from the University of London and has interned at Opplane and Autsai. He works across Python, R, and machine learning. His portfolio spans personal ML research frameworks, university coursework projects, and applied AI products.
 
 ## Projects
 

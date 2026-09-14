@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { AnimateIn } from "@/app/components/AnimateIn";
-
-// Bump this whenever public/Velez_Isaac_Resume_Website.pdf is replaced with a new version.
-const RESUME_LAST_UPDATED = "September 14, 2026";
+import { RESUME_LAST_UPDATED } from "@/lib/resume";
 
 export const metadata: Metadata = {
   title: "Résumé",
-  description: "Résumé of Isaac Vélez Aguirre.",
+  description: `Résumé of Isaac Velez. Last updated ${RESUME_LAST_UPDATED}.`,
+  alternates: { canonical: "/resume" },
   openGraph: {
-    title: "Résumé of Isaac Vélez Aguirre",
-    description: "Résumé of Isaac Vélez Aguirre.",
+    type: "website",
+    url: "/resume",
+    title: "Résumé of Isaac Velez",
+    description: `Résumé of Isaac Velez. Last updated ${RESUME_LAST_UPDATED}.`,
   },
 };
 
@@ -54,7 +55,7 @@ export default function Resume() {
                 data="/Velez_Isaac_Resume_Website.pdf"
                 type="application/pdf"
                 className="w-full h-[80vh]"
-                aria-label="Isaac Vélez Aguirre's résumé"
+                aria-label="Isaac Velez's résumé"
               >
                 <div className="p-10 text-center text-sm text-slate-500 dark:text-slate-400">
                   Your browser can&apos;t display the PDF inline.{' '}

@@ -9,6 +9,13 @@ import { projects } from './projects/data';
 import { ParticleField } from './components/ParticleField';
 import { ScrambleText } from './components/ScrambleText';
 import { ProjectsGrid } from './components/ProjectsGrid';
+import { personSchema } from '@/lib/person';
+
+const profilePageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: personSchema,
+};
 
 /* ─── Typewriter ─────────────────────────────────────── */
 const ROLES = ['MSAI student @ Columbia', 'Data Scientist From UoL/LSE', 'Aspiring AI/ML Engineer', 'Self Taught Software Developer'];
@@ -114,6 +121,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
+      />
 
       {/* ══════════════════════════════════════════════════
           HERO
@@ -152,7 +163,7 @@ export default function Home() {
               <div className="absolute inset-0 rounded-full blur-lg bg-indigo-500/25 dark:bg-indigo-500/18 scale-110" />
               {/* Photo */}
               <div className="absolute inset-[3px] rounded-full overflow-hidden bg-white dark:bg-slate-900 border-2 border-white dark:border-slate-900">
-                <Image src={isaacIcon} alt="Isaac Vélez Aguirre" fill sizes="128px" className="object-cover rounded-full" priority />
+                <Image src={isaacIcon} alt="Isaac Velez" fill sizes="128px" className="object-cover rounded-full" priority />
               </div>
             </div>
           </motion.div>
@@ -165,7 +176,7 @@ export default function Home() {
               </span>
               {' '}
               <ScrambleText
-                text="Vélez Aguirre"
+                text="Velez"
                 className="text-transparent bg-clip-text bg-linear-to-r from-indigo-600 via-violet-600 to-cyan-500 dark:from-indigo-400 dark:via-violet-400 dark:to-cyan-400 gradient-shift"
                 delay={0.5}
               />
@@ -310,7 +321,7 @@ export default function Home() {
 
             <SectionReveal delay={0.15} className="md:sticky md:top-24">
               <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl shadow-black/10 dark:shadow-black/40">
-                <Image src={isaacIcon} alt="Isaac Vélez Aguirre" fill sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" priority />
+                <Image src={isaacIcon} alt="Isaac Velez" fill sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" priority />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-900/30 to-transparent" />
               </div>
             </SectionReveal>
