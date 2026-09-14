@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const lastUpdated = 'May 15, 2026';
+  const lastUpdated = process.env.NEXT_PUBLIC_BUILD_DATE;
 
   return (
     <footer className="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
@@ -17,8 +17,8 @@ export default function Footer() {
               Isaac Vélez Aguirre
             </p>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              Data Science & Business Analytics<br />
-              AI &amp; LLM Enthusiast · Berlin, Germany
+              MSAI @ Columbia University<br />
+              AI &amp; Robotics · New York, NY
             </p>
           </div>
 
@@ -29,7 +29,6 @@ export default function Footer() {
             </p>
             <ul className="space-y-2">
               {[
-                { label: 'About', href: '/about' },
                 { label: 'Projects', href: '/projects' },
                 { label: 'Contact', href: '/contact' },
               ].map(({ label, href }) => (

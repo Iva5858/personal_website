@@ -11,7 +11,7 @@ import { ScrambleText } from './components/ScrambleText';
 import { ProjectsGrid } from './components/ProjectsGrid';
 
 /* ─── Typewriter ─────────────────────────────────────── */
-const ROLES = ['Data Scientist (Almost...)', 'Aspiring AI/ML Engineer', 'Self Taught Software Developer'];
+const ROLES = ['MSAI student @ Columbia', 'Data Scientist From UoL/LSE', 'Aspiring AI/ML Engineer', 'Self Taught Software Developer'];
 
 function useTypewriter(words: string[]) {
   const [state, setState] = useState({ wi: 0, ci: 0, del: false });
@@ -183,7 +183,7 @@ export default function Home() {
 
           {/* Location */}
           <motion.p variants={heroItem} className="text-sm text-slate-400 dark:text-slate-500 mb-9">
-            University of London &amp; Forward College &middot; Berlin, Germany
+            MSAI @ Columbia University (Robotics &amp; Perception) &middot; New York, NY
           </motion.p>
 
           {/* CTAs */}
@@ -199,6 +199,12 @@ export default function Home() {
               className="px-7 py-3 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 rounded-xl font-semibold hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 cursor-pointer"
             >
               Get In Touch
+            </Link>
+            <Link
+              href="/resume"
+              className="px-7 py-3 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 rounded-xl font-semibold hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+            >
+              View Résumé
             </Link>
           </motion.div>
 
@@ -230,7 +236,7 @@ export default function Home() {
 
           {/* Last updated */}
           <motion.p variants={heroItem} className="text-xs text-slate-300 dark:text-slate-700 mt-5">
-            Site information current as of May 15, 2026
+            Site information current as of {process.env.NEXT_PUBLIC_BUILD_DATE}
           </motion.p>
         </motion.div>
 
@@ -278,39 +284,35 @@ export default function Home() {
       ══════════════════════════════════════════════════ */}
       <section className="py-24 bg-white dark:bg-slate-950">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <SectionReveal delay={0.05}>
               <span className="text-xs font-semibold uppercase tracking-widest text-indigo-500 dark:text-indigo-400 mb-3 block">
                 About Me
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold mb-5 text-slate-900 dark:text-slate-100 leading-tight">
-                Colombian-Spanish student<br className="hidden sm:block" /> exploring AI &amp; data
+                Data Scientist, AI &amp; Robotics Graduate Student
               </h2>
-              <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                I&apos;m a third-year student at the University of London studying Data Science &amp; Business Analytics,
-                passionate about AI, machine learning, and turning data into meaningful insight.
-              </p>
               <p className="text-slate-600 dark:text-slate-400 mb-7 leading-relaxed">
-                Currently applying to master&apos;s programs for Fall 2026. I have hands-on experience as a
-                Software Engineer and Data Scientist, working with AI/ML technologies and Large Language Models.
+                I&apos;ve lived in 5 countries across 3 continents, and bring that international background to my
+                work as a data scientist with software engineering experience. I&apos;m currently pursuing an MS
+                in AI at Columbia, focused on robotics and perception, and looking for Summer 2027 internships.
               </p>
               <Link
-                href="/about"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-xl font-semibold hover:bg-slate-700 dark:hover:bg-white transition-colors duration-200 cursor-pointer text-sm"
               >
-                Learn More
+                Get In Touch
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
             </SectionReveal>
 
-            <SectionReveal
-              delay={0.15}
-              className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl shadow-black/10 dark:shadow-black/40"
-            >
-              <Image src={isaacIcon} alt="Isaac Vélez Aguirre" fill sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" priority />
-              <div className="absolute inset-0 bg-linear-to-t from-slate-900/30 to-transparent" />
+            <SectionReveal delay={0.15} className="md:sticky md:top-24">
+              <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl shadow-black/10 dark:shadow-black/40">
+                <Image src={isaacIcon} alt="Isaac Vélez Aguirre" fill sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" priority />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-900/30 to-transparent" />
+              </div>
             </SectionReveal>
           </div>
         </div>

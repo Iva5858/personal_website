@@ -22,23 +22,24 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Isaac Vélez Aguirre | Data Science & Business Analytics",
+    default: "Isaac Vélez Aguirre | AI & Robotics",
     template: "%s | Isaac Vélez Aguirre",
   },
   description:
-    "Isaac Vélez Aguirre – Colombian-Spanish student studying Data Science & Business Analytics at the University of London. Portfolio, projects in AI, LLMs, and machine learning. Berlin, Germany.",
+    "Isaac Vélez Aguirre – MS in AI (Robotics & Perception) student at Columbia University. Portfolio, projects in AI, LLMs, and machine learning. New York, NY.",
   keywords: [
     "Isaac Vélez Aguirre",
     "Isaac Velez Aguirre",
     "Data Science",
-    "Business Analytics",
+    "Robotics",
+    "Columbia University",
     "University of London",
     "Forward College",
     "machine learning",
     "AI",
     "LLM",
     "portfolio",
-    "Berlin",
+    "New York",
     "Isaac Velez",
     "Isaac Aguirre",
   ],
@@ -49,9 +50,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Isaac Vélez Aguirre",
-    title: "Isaac Vélez Aguirre | Data Science & Business Analytics",
+    title: "Isaac Vélez Aguirre | AI & Robotics",
     description:
-      "Portfolio of Isaac Vélez Aguirre – Data Science & Business Analytics student. Projects in AI, LLMs, and machine learning.",
+      "Portfolio of Isaac Vélez Aguirre – MSAI student at Columbia University. Projects in AI, LLMs, robotics, and machine learning.",
     images: [
       {
         url: "/images/isaac_icon.png",
@@ -63,8 +64,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Isaac Vélez Aguirre | Data Science & Business Analytics",
-    description: "Portfolio – Data Science, AI, LLMs, machine learning. University of London & Forward College.",
+    title: "Isaac Vélez Aguirre | AI & Robotics",
+    description: "Portfolio – AI, robotics, LLMs, machine learning. MSAI @ Columbia University.",
     images: ["/images/isaac_icon.png"],
   },
   robots: {
@@ -81,14 +82,14 @@ const personJsonLd = {
   name: "Isaac Vélez Aguirre",
   alternateName: "Isaac Velez Aguirre",
   url: siteUrl,
-  jobTitle: "Data Science & Business Analytics Student",
+  jobTitle: "MS in Artificial Intelligence Student, Robotics & Perception",
   description:
-    "Colombian-Spanish student at University of London and Forward College. Software Engineer and Data Scientist with experience in AI, ML, and Large Language Models.",
+    "Data scientist pursuing an MS in AI at Columbia University, focused on robotics and perception. Experience in software engineering, data science, and AI/LLMs.",
   alumniOf: [
     { "@type": "Organization", name: "University of London" },
     { "@type": "Organization", name: "Forward College" },
   ],
-  knowsAbout: ["Data Science", "Machine Learning", "Artificial Intelligence", "Large Language Models", "Business Analytics"],
+  knowsAbout: ["Artificial Intelligence", "Robotics", "Perception", "Data Science", "Machine Learning", "Large Language Models"],
   image: `${siteUrl}/images/isaac_icon.png`,
   sameAs: [
     "https://linkedin.com/in/isaac-velez",

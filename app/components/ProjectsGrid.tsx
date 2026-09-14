@@ -91,15 +91,23 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
 
             {/* Image */}
             <div className="relative h-44 overflow-hidden bg-slate-100 dark:bg-slate-800">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className={`transition-transform duration-500 group-hover:scale-105 ${
-                  project.id === 4 || project.id === 5 ? 'object-contain p-4' : 'object-cover'
-                }`}
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              {project.image ? (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className={`transition-transform duration-500 group-hover:scale-105 ${
+                    project.id === 4 || project.id === 5 || project.id === 7 || project.id === 8 ? 'object-contain p-4' : 'object-cover'
+                  }`}
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center bg-linear-to-br from-indigo-500/15 via-violet-500/10 to-cyan-500/15 dark:from-indigo-500/12 dark:via-violet-500/8 dark:to-cyan-500/12">
+                  <span className="text-3xl font-bold text-indigo-500/40 dark:text-indigo-400/30 select-none">
+                    {project.title.charAt(0)}
+                  </span>
+                </div>
+              )}
               <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="absolute top-3 left-3 right-3 flex items-start justify-between gap-2">

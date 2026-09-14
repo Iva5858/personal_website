@@ -92,7 +92,7 @@ export default function Contact() {
     },
     {
       label: 'Location',
-      value: 'Berlin, Germany',
+      value: 'New York, NY',
       href: null,
       icon: (
         <>

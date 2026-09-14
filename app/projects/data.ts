@@ -4,7 +4,7 @@ export interface Project {
   description: string;
   technologies: string[];
   category: string;
-  image: string;
+  image?: string;
   timeframe: string;
   current?: boolean; // true for the project currently being actively worked on
   interactive: boolean; // true for projects with interactive demos within the website
@@ -16,14 +16,38 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 8,
+    title: 'Vera',
+    description:
+      'Volunteer contributing AI engineer on Vera, a free AI-powered fact-checking service accessible by phone and WhatsApp, built by the NGO LaReponse.Tech.',
+    technologies: ['LLMs', 'Prompt Engineering'],
+    category: 'AI / LLM Applications',
+    image: '/images/projects/project8/vera_logo.png',
+    timeframe: 'June 2026 - Present',
+    current: true,
+    interactive: false,
+    externalLink: 'https://askvera.org',
+  },
+  {
+    id: 7,
+    title: 'LLM-Assisted Creative Curation (research)',
+    description:
+      'Research assistant on a preregistered study testing whether LLM judges can recover human judgments of creative originality, and whether they can serve as a low-burden verifier for human curation of creative ideas.',
+    technologies: [],
+    category: 'Research',
+    image: '/images/projects/project7/Forward_College_logo.png',
+    timeframe: 'June 2026 - Present',
+    current: true,
+    interactive: false,
+  },
+  {
     id: 6,
     title: 'Stock Market Prediction & Evaluation Framework',
     description: 'A Python framework for registering, running, and comparing stock return prediction models across 24 algorithms and 7 model families. Supports multi-horizon forecasting (1, 5, and 21 days), classification and regression targets, walk-forward cross-validation, SHAP feature importance, macroeconomic feature enrichment via the FRED API, automated strategy optimisation, portfolio construction with four allocators, and realistic backtesting with transaction costs.',
     technologies: ['Python', 'XGBoost', 'LightGBM', 'CatBoost', 'Optuna', 'SHAP', 'scikit-learn', 'statsmodels', 'yfinance', 'FRED API', 'Pandas', 'NumPy'],
     category: 'Machine Learning',
     image: '/images/projects/project6/stock_model.jpg',
-    timeframe: 'May 2026 - Present',
-    current: true,
+    timeframe: 'May 2026',
     interactive: false,
     githubUrl: 'https://github.com/Iva5858/stock_model_tester',
     details: `Stock Model Tester is a personal research framework I built to systematically test and compare machine learning approaches to stock return prediction. The motivation came from wanting a rigorous, reproducible way to evaluate whether any given model actually adds predictive value over simple baselines — and to do so without the usual pitfalls of data leakage or look-ahead bias.
@@ -59,7 +83,9 @@ Macroeconomic Features (FRED API)
 The macro_fred transform enriches the feature set with seven FRED series: 10-year Treasury yield, 3-month T-bill, term spread, BAA and AAA corporate yields, default spread, and CPI inflation. Responses are cached locally with a 24-hour TTL and publication lags are enforced per series. If the API key is absent or FRED is unavailable, the transform logs a warning and the pipeline continues without macro columns.
 
 Testing
-The project has 89 tests covering baseline models, all 15 metrics including classification, feature pipeline shapes and no-leakage guarantees, full pipeline smoke tests for 4 models, config validation, CLI commands, registry completeness, DAG enforcement, and the v1/v2 results store interface.`,
+The project has 89 tests covering baseline models, all 15 metrics including classification, feature pipeline shapes and no-leakage guarantees, full pipeline smoke tests for 4 models, config validation, CLI commands, registry completeness, DAG enforcement, and the v1/v2 results store interface.
+
+So far, under expanding-window walk-forward out-of-sample evaluation with realistic transaction costs, no model beats the historical-mean baseline across the 3 tickers tested — an earlier single-split evaluation had shown a misleadingly good 1.51 Sharpe that was masking a -99.99% drawdown, which is why model selection now defaults to OOS R² over raw Sharpe. Left unresolved for now.`,
   },
   {
     id: 5,

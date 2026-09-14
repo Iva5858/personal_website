@@ -41,18 +41,18 @@ export function GET() {
 
   const body = `# Isaac Vélez Aguirre – Portfolio
 
-> Data Science & Business Analytics student (University of London, BSc). Based in Berlin.
-> Interests: machine learning, statistical computing, LLMs, quantitative finance.
+> MS in Artificial Intelligence student (Columbia University, Robotics & Perception). Based in New York, NY.
+> Interests: robotics, perception, machine learning, statistical computing, LLMs.
 
 - Homepage: ${baseUrl}
 - Projects: ${baseUrl}/projects
-- About: ${baseUrl}/about
+- Résumé: ${baseUrl}/resume
 - Contact: ${baseUrl}/contact
 - Sitemap: ${baseUrl}/sitemap.xml
 
 ## About
 
-Isaac Vélez Aguirre is a Data Science and Business Analytics student at the University of London, currently based in Berlin. He has interned at Opplane and Autsai, and works across Python, R, and machine learning. His portfolio spans personal ML research frameworks, university coursework projects, and applied AI products.
+Isaac Vélez Aguirre is an MS in Artificial Intelligence student at Columbia University, focused on robotics and perception, currently based in New York, NY. He holds a BSc in Data Science & Business Analytics from the University of London and has interned at Opplane and Autsai. He works across Python, R, and machine learning. His portfolio spans personal ML research frameworks, university coursework projects, and applied AI products.
 
 ## Projects
 
